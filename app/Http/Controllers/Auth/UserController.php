@@ -5,11 +5,18 @@ namespace App\Http\Controllers\Auth;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Question;
 use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
     public function index()
+    {
+        $questions = Question::take(10)->get();
+        return view('welcome', compact('questions'));
+    }
+
+    public function show()
     {
         return view('auth.authenticate');
     }
@@ -41,5 +48,10 @@ class UserController extends Controller
         $request->session()->regenerateToken();
         
         return redirect('/');
+    }
+
+    public function about()
+    {
+        return view('about');
     }
 }
