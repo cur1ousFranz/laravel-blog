@@ -62,20 +62,47 @@
         </svg>
     </a>
     <div class="lg:hidden">
-        <button class="navbar-burger flex items-center text-blue-600 p-3">
+        <button class="navbar-burger flex items-center text-gray-700 hover:text-gray-900 p-3">
             <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                 <title>Mobile menu</title>
                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
             </svg>
         </button>
     </div>
-    @if (Auth::user())
-        {{-- <a class="hidden lg:inline-block py-2 px-6 bg-gray-800 hover:bg-gray-900 text-sm text-white font-bold rounded-xl transition duration-200"
-            href="{{ route('signout') }}">Sign out</a> --}}
-        <a class="hidden lg:inline-block py-2 px-6 bg-gray-800 hover:bg-gray-900 text-sm text-white font-bold rounded-xl transition duration-200"
-            href="{{ route('question-index') }}">Create Post</a>
-        
-    @endif
+    <div class="hidden space-x-2 lg:flex">
+        <a class="block p-4 text-sm font-semibold text-gray-700 hover:underline hover:text-gray-900"
+        href="{{ route('home') }}">Home</a>
+        <a class="block p-4 text-sm font-semibold text-gray-700 hover:underline hover:text-gray-900"
+        href="{{ route('about') }}">About</a>
+        @if (Auth::user())
+
+            <div class="relative inline-block text-left mt-3">
+                <div id="profile" class="cursor-pointer">
+                    <img src="{{ asset('storage/img/profile-default.png') }}" class="w-7" alt="">
+                </div>
+                <div id="profile-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-44 z-10 rounded-md shadow-lg">
+                    <div class="rounded-md bg-white shadow-xs text-start px-2">
+                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            <ul>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                                        href="{{ route('question-index') }}">Create Post</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                                        href="{{ route('signout') }}">Sign out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        @else
+            <a class="hidden lg:inline-block py-2 px-6 mt-2 h-fit bg-gray-700 hover:bg-gray-900 text-sm text-white font-bold rounded-xl transition duration-200"
+                href="{{ route('login') }}">Sign in</a>
+        @endif
+    </div>
 
 </nav>
 
@@ -83,7 +110,7 @@
     <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
     <nav class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto">
         <div class="flex items-center mb-8">
-            <a class="mr-auto text-3xl font-bold leading-none" href="#">
+            <a class="mr-auto text-3xl font-bold leading-none" href="{{ route('home') }}">
                 <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="h-16"
                     viewBox="0 0 411.000000 214.000000" preserveAspectRatio="xMidYMid meet">
                     <g transform="translate(0.000000,214.000000) scale(0.100000,-0.100000)" fill="#000000"
@@ -158,33 +185,19 @@
         <div>
             <ul>
                 <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                        href="#">Home</a>
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                        href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                        href="#">About Us</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                        href="#">Services</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                        href="#">Pricing</a>
-                </li>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded"
-                        href="#">Contact</a>
+                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                        href="{{ route('about') }}">About</a>
                 </li>
             </ul>
         </div>
         <div class="mt-auto">
             <div class="pt-6">
-                <a class="block px-4 py-3 mb-3  text-xs text-center font-semibold  bg-gray-50 hover:bg-gray-100 rounded-xl"
-                    href="#">Sign in</a>
-                <a class="block px-4 py-3 mb-2 leading-loose text-xs text-center text-white font-semibold bg-blue-600 hover:bg-blue-700  rounded-xl"
-                    href="#">Sign Up</a>
+                <a class="block px-4 py-3 mb-3  text-xs text-center font-semibold  bg-gray-700 hover:bg-gray-900 text-white rounded-xl"
+                    href="{{ route('login') }}">Sign in</a>
             </div>
             <p class="my-4 text-xs text-center text-gray-400">
                 <span>Copyright © 2021</span>
@@ -241,7 +254,14 @@
                 });
             }
         }
+
+        const profile = document.getElementById('profile')
+        const profileDropdown = document.getElementById('profile-dropdown')
+        profile.addEventListener('click', (e) => {
+            profileDropdown.classList.toggle('hidden')
+        })
     });
+
 </script>
 
 @endpush
