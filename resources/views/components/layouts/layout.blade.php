@@ -21,21 +21,32 @@
             border-radius: 10px;
             overflow-x: auto;
         }
+
+        p {
+            text-align: justify;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
     </style>
 
 </head>
 
-<body class="antialiased">
+<body class="antialiased min-h-screen">
 
     <x-layouts.nav-bar/>
 
-    {{ $slot }}
+    <main class="max-w-screen-xl mx-auto mb-12">
+        {{ $slot }}
+    </main>
+
+    <x-layouts.footer/>
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     @stack('child-scripts')
 </body>
 
 </html>
+
 
 
 
