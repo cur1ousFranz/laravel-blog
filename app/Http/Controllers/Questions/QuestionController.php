@@ -21,22 +21,36 @@ class QuestionController extends Controller
         $validated = $request->validate([
             'title' => ['required', Rule::unique('questions', 'title')],
             'body' => 'required',
+            'tags' => 'required',
         ]);
-
-        auth()->user()->questions()->create([
+        
+        $question = auth()->user()->questions()->create([
             'title' => ucwords($validated['title']),
-            'body' => $validated['body'],
             'slug' => Str::slug($validated['title']),
+            'body' => $validated['body'],
+            'tags' => json_encode(explode (",", $validated['tags'])),
         ]);
 
-        return view('questions.question');
+        $description = $this->extractSentence($question);
+        $questions = $this->getQuestionsByTag($question);
+
+        return view('questions.question-show', [
+            'question' => $question, 
+            'description' => $description,
+            'questions' => $questions
+        ]);
     }
 
     public function show(Question $question)
     {
-
         $description = $this->extractSentence($question);
-        return view('questions.question-show', ['question' => $question, 'description' => $description]);
+        $questions = $this->getQuestionsByTag($question);
+
+        return view('questions.question-show', [
+            'question' => $question, 
+            'description' => $description,
+            'questions' => $questions
+        ]);
     }
 
     public function edit(Question $question)
@@ -49,15 +63,33 @@ class QuestionController extends Controller
         $validated = $request->validate([
             'title' => ['required', Rule::unique('questions', 'title')->ignore($question->id)],
             'body' => 'required',
+            'tags' => 'required',
         ]);
 
         $question->title = ucwords($validated['title']);
-        $question->body = $validated['body'];
         $question->slug = Str::slug($validated['title']);
+        $question->body = $validated['body'];
+        $question->tags = json_encode(explode (",", $validated['tags']));
         $question->save();
         $description = $this->extractSentence($question);
 
-        return view('questions.question-show', ['question' => $question, 'description' => $description]);
+        $questions = $this->getQuestionsByTag($question);
+        return view('questions.question-show', [
+            'question' => $question, 
+            'description' => $description,
+            'questions' => $questions,
+        ]);
+    }
+
+    public function searchQuestion(Request $request)
+    {
+        $validated = $request->validate(['search' => 'required']);
+        $questions = Question::where('title', 'like', '%' . $validated['search'] . '%')->take(20)->get();
+
+        return view('questions.question-search', [
+            'questions' => $questions,
+            'search' => $validated['search']
+        ]);
     }
 
     private function extractSentence($question)
@@ -69,5 +101,27 @@ class QuestionController extends Controller
         $description = preg_replace('/<[^>]*>/', '', $description);
 
         return $description;
+    }
+
+    public function getQuestionsByTag($question)
+    {
+        $tags = json_decode($question->tags);
+        $questionLists = [];
+        $questions = [];
+
+        foreach ($tags as $tag) {
+            $results = Question::where('title', 'like', '%'.$tag.'%')->get();
+            array_push($questionLists, $results);
+        }
+
+        foreach ($questionLists as $questionList) {
+            foreach ($questionList as $currentQuestion) {
+                if(!in_array($currentQuestion, $questions) && $question->id !== $currentQuestion->id) {
+                    array_push($questions, $currentQuestion);
+                }
+            }
+        }
+
+        return $questions;
     }
 }

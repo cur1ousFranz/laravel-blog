@@ -20,10 +20,20 @@
                             <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
                         @enderror
                     </div>
-
-                    <button class="px-4 py-2 w-full rounded-lg bg-gray-800 hover:bg-gray-900 text-white">
-                        Create
-                    </button>
+                    <div>
+                        <input type="text" name="tags" class="px-4 py-2 w-full border rounded-lg border-gray-900" placeholder="Tags" value="{{ old('tags') }}">
+                        @error('tags')
+                            <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div class="flex justify-end space-x-3">
+                        <button type="button" onclick="history.back()" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-600 hover:text-white  text-gray-900">
+                            Cancel
+                        </button>
+                        <button class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-900 text-white">
+                            Create
+                        </button>
+                    </div>
                 </form>
             </div>
             <div class="w-96">

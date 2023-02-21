@@ -22,6 +22,24 @@
                             <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
                         @enderror
                     </div>
+                    <div>
+                        @php
+                            $tags = json_decode($question->tags);
+                            $combinedTags = '';
+                            foreach ($tags as $tag) {
+                                if(!$combinedTags) {
+                                    $combinedTags = $combinedTags . $tag;
+                                } else {
+                                    $combinedTags = $combinedTags . ',' . $tag;
+                                }
+                            }
+                        @endphp
+
+                        <input type="text" name="tags" class="px-4 py-2 w-full border rounded-lg border-gray-900" placeholder="Tags" value="{{ old('tags') ?? $combinedTags }}">
+                        @error('tags')
+                            <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                        @enderror
+                    </div>
 
                     <button class="px-4 py-2 w-full rounded-lg bg-gray-800 hover:bg-gray-900 text-white">
                         Update

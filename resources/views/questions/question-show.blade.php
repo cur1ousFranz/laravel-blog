@@ -1,11 +1,13 @@
 <x-layouts.layout title="{{ $question->title }}" description="{{ $description }}">
     <div class="px-4 mt-8">
         <div class="w-full flex">
-            <div class="w-96">
+            <div class="hidden w-96 md:block">
                 {{-- ADS --}}
             </div>
             <div class="w-full p-4 shadow-sm">
-                <h1 class="text-xl font-bold mb-2 text-gray-800 md:text-4xl">{{ $question->title }}</h1>
+                <div class="mb-4">
+                    {{-- ADS --}}
+                </div>
                 @if (Auth::user())
                     <div class="flex justify-end space-x-2">
                         <span class="cursor-pointer hover:underline text-gray-900">
@@ -18,11 +20,33 @@
                         </span>
                     </div>
                 @endif
-                <h2 class="mt-6 text-gray-900">
-                    {!! $question->body !!}</code>
-                </h2>
+                <h1 class="text-xl font-bold mb-10 text-gray-800 md:text-4xl">{{ $question->title }}</h1>
+
+                {!! $question->body !!}</code>
+
+                <div class="mt-6">
+                    @foreach (json_decode($question->tags) as $tag)
+                        <span class="py-1 px-2 rounded-lg text-sm text-white bg-gray-700 ">{{ $tag }}</span>
+                    @endforeach
+                </div>
+                <div class="mt-6">
+                    {{-- ADS --}}
+                </div>
+                <div class="mt-12">
+                    <h1 class="text-lg font-bold text-gray-800 md:text-2xl">Related problems</h1>
+                    <div class="mt-4">
+                        @if ($questions)
+                            @foreach (array_slice($questions, 0, 10, true) as $question)
+                                <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="underline hover:cursor-pointer md:text-lg text-blue-700 hover:text-blue-900">{{ $question->title }}</a>
+                                <br>
+                            @endforeach
+                        @else
+                            <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
+                        @endif
+                    </div>
+                </div>
             </div>
-            <div class="w-96">
+            <div class="hidden w-96 md:block">
                  {{-- ADS --}}
             </div>
         </div>
