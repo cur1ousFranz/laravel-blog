@@ -12,7 +12,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $questions = Question::take(10)->get();
+        $questions = Question::get()->random(10);
         return view('welcome', compact('questions'));
     }
 
