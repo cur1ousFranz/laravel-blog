@@ -86,7 +86,11 @@
                             <ul>
                                 <li class="mb-1">
                                     <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
-                                        href="{{ route('question-index') }}">Create Post</a>
+                                        href="{{ route('question-index') }}">Create Question</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                                        href="#">Questions</a>
                                 </li>
                                 <li class="mb-1">
                                     <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
