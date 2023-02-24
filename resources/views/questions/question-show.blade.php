@@ -1,17 +1,14 @@
 <x-layouts.layout title="{{ $question->title }}" description="{{ $description }}">
-    <div class="px-4 mt-8">
-        <div class="w-full flex">
-            <div class="hidden w-96 md:block">
-                {{-- ADS --}}
-            </div>
-            <div class="w-full p-4 shadow-sm">
-                <div class="mb-4">
+    <div class="mt-8">
+        <div class="w-full flex lg:space-x-1">
+            <div class="p-6 w-full" style="max-width: 60rem;">
+                <div class="mb-4 pb-4">
                     {{-- ADS --}}
                 </div>
                 @if (Auth::user())
                     <div class="flex justify-end space-x-2">
                         <span class="cursor-pointer hover:underline text-gray-900">
-                            <a href="{{ route('question-edit', [$question->slug]) }}">Edit</a>
+                            <a href="{{ route('question-edit', [$question->slug]) }}" class="text-gray-700 hover:text-gray-900">Edit</a>
                         </span>
                         <span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-pencil mt-1" viewBox="0 0 16 16">
@@ -24,21 +21,30 @@
 
                 {!! $question->body !!}</code>
 
-                <div class="mt-6">
+                <div class="tags mt-2 flex flex-wrap overflow-auto">
                     @foreach (json_decode($question->tags) as $tag)
-                        <span class="py-1 px-2 rounded-lg text-sm text-white bg-gray-700 ">{{ $tag }}</span>
+                        <div class="py-1 mx-1 px-2 my-1 w-fit rounded-lg text-sm text-white bg-gray-700 ">{{ $tag }}</div>
                     @endforeach
                 </div>
-                <div class="mt-6">
+                <div class="mt-6 pb-4">
                     {{-- ADS --}}
                 </div>
                 <div class="mt-12">
                     <h1 class="text-lg font-bold text-gray-800 md:text-2xl">Related problems</h1>
                     <div class="mt-4">
+                        @php
+                            $randomQuestions = Arr::random($questions, 10);
+                        @endphp
                         @if ($questions)
-                            @foreach (array_slice($questions, 0, 10, true) as $question)
-                                <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="underline hover:cursor-pointer md:text-lg text-blue-700 hover:text-blue-900">{{ $question->title }}</a>
-                                <br>
+                            @foreach ($randomQuestions as $question)
+                                <div class="p-2 max-w-full rounded hover:bg-gray-200" >
+                                    <span class="inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                                        </svg>
+                                    </span>
+                                    <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class=" w-full font-semibold underline hover:cursor-pointer text-blue-500 hover:text-blue-700">{{ $question->title }}</a>
+                                </div>
                             @endforeach
                         @else
                             <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
@@ -46,9 +52,15 @@
                     </div>
                 </div>
             </div>
-            <div class="hidden w-96 md:block">
+            <div class="hidden w-80 lg:block" style="min-width: 300px;">
                  {{-- ADS --}}
             </div>
         </div>
     </div>
 </x-layouts.layout>
+
+<style>
+    a {
+        color: blue;
+    }
+</style>
