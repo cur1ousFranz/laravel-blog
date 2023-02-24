@@ -41,9 +41,15 @@
                         @enderror
                     </div>
 
-                    <button class="px-4 py-2 w-full rounded-lg bg-gray-800 hover:bg-gray-900 text-white">
-                        Update
-                    </button>
+                    <div class="flex justify-end space-x-3">
+                        <button type="button" onclick="history.back()" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-600 hover:text-white  text-gray-900">
+                            Cancel
+                        </button>
+                     
+                        <button class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-900 text-white">
+                            Update
+                        </button>
+                    </div>
                 </form>
             </div>
 
