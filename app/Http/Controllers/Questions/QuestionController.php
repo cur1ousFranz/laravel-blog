@@ -84,7 +84,18 @@ class QuestionController extends Controller
     public function searchQuestion(Request $request)
     {
         $validated = $request->validate(['search' => 'required']);
-        $questions = Question::where('title', 'like', '%' . $validated['search'] . '%')->take(20)->get();
+        $words = explode(" ", $validated['search']);
+        $questions = [];
+
+        foreach ($words as $word) {
+            $result = Question::where('title', 'like', '%' . $word . '%')->take(30)->get();
+
+            foreach ($result as $question) {
+                if(!in_array($question, $questions)) {
+                    array_push($questions, $question);
+                }
+            }
+        }
 
         return view('questions.question-search', [
             'questions' => $questions,
