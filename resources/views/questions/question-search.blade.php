@@ -11,20 +11,22 @@
 
                 <form action="{{ route('question-search') }}" class="w-full flex justify-center" method="POST">
                     @csrf
-                    <input type="text" name="search" class="px-4 py-2 border-b w-full focus:outline-none  border-gray-900 " placeholder="Search" value="{{ old('search') ?? $search }}">
-                    <button>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="mt-2 bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg>
-                        </span>
-                    </button>
+                    <input type="text" name="search" class="rounded-full px-4 py-2 w-full border focus:outline-none  border-gray-900 " placeholder="Search" value="{{ old('search') ?? $search }}">
+                    @error('search')
+                        <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                    @enderror
                 </form>
                 <div class="mt-4">
-                    @if ($questions->count())
+                    @if ($questions)
                         @foreach ($questions as $question)
-                            <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="underline hover:cursor-pointer md:text-lg text-blue-700 hover:text-blue-900">{{ $question->title }}</a>
-                            <br>
+                            <div class="p-2 max-w-full rounded hover:bg-gray-200" >
+                                <span class="inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                                    </svg>
+                                </span>
+                                <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class=" w-full font-semibold underline hover:cursor-pointer text-blue-500 hover:text-blue-700">{{ $question->title }}</a>
+                            </div>
                         @endforeach
                     @else
                         <h4 class="text-lg mt-4 text-center font-bold text-gray-500">
