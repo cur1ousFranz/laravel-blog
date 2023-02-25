@@ -21,3 +21,4 @@ Route::group(['middleware' => 'auth'], function() {
 });
 Route::get('/question/{question:slug}', [QuestionController::class, 'show'])->name('question-show');
 Route::post('/question/search', [QuestionController::class, 'searchQuestion'])->name('question-search');
+Route::get('/category/{category}', [QuestionController::class, 'category'])->name('category');
