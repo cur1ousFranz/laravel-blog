@@ -7,6 +7,7 @@ use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redis;
 
 class QuestionController extends Controller
@@ -29,6 +30,7 @@ class QuestionController extends Controller
             'slug' => Str::slug($validated['title']),
             'body' => $validated['body'],
             'tags' => json_encode(explode (",", $validated['tags'])),
+            'read_time' => $this->calculateReadTime($validated['body']),
         ]);
 
         $description = $this->extractSentence($question);
@@ -70,6 +72,7 @@ class QuestionController extends Controller
         $question->slug = Str::slug($validated['title']);
         $question->body = $validated['body'];
         $question->tags = json_encode(explode (",", $validated['tags']));
+        $question->read_time = $this->calculateReadTime($validated['body']);
         $question->save();
         $description = $this->extractSentence($question);
 
@@ -78,6 +81,41 @@ class QuestionController extends Controller
             'question' => $question, 
             'description' => $description,
             'questions' => $questions,
+        ]);
+    }
+
+    public function category($category)
+    {
+
+        $questions = DB::table('questions')
+            ->whereJsonContains('tags', [$category])
+            ->paginate(12);
+
+        $categoryLogo = [
+            'laravel' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg',
+            'vuejs' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg',
+            'angular' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg',
+            'react' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
+            'jquery' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg',
+            'php' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
+            'python' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',
+            'bootstrap' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg',
+            'javascript' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
+            'mysql' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg',
+            'nodejs' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
+            'codeigniter' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain-wordmark.svg',
+            'c' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
+            'c#' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
+            'c++' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
+            'docker' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg',
+            'apache' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg',
+            'composer' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg',
+        ];
+
+        return view('questions.category-question', [
+            'category' => $category,
+            'questions' => $questions,
+            'categoryLogo' => $categoryLogo,
         ]);
     }
 
@@ -135,4 +173,13 @@ class QuestionController extends Controller
 
         return $questions;
     }
+
+    function calculateReadTime($content) {
+
+        $wordCount = str_word_count(strip_tags($content));
+        $readingSpeed = 200; // words per minute
+
+        return ceil($wordCount / $readingSpeed);
+    }
+
 }
