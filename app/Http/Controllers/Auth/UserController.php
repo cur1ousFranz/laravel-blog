@@ -54,4 +54,9 @@ class UserController extends Controller
     {
         return view('about');
     }
+
+    public function disclaimer()
+    {
+        return view('disclaimer');
+    }
 }
