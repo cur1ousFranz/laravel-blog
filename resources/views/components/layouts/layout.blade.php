@@ -13,7 +13,9 @@
     <link rel="icon" type="image/svg+xml" href="{{ asset('storage/logo/logo.png') }}"/>
     <script src="https://cdn.tiny.cloud/1/t6ma4oxtlblgdc5mskjxpxgs6ham551qbxdkw09lip31ej1k/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+    <link rel="stylesheet"
+      href="//unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css">
+
 
     @vite('resources/js/app.js')
     @vite('resources/css/code-snippet.css')
@@ -42,8 +44,9 @@
     </main>
 
     <x-layouts.footer/>
+    
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
     @stack('child-scripts')
 </body>
 
