@@ -16,9 +16,7 @@
     <link rel="stylesheet"
       href="//unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css">
 
-
     @vite('resources/js/app.js')
-    @vite('resources/css/code-snippet.css')
 
     <style>
         code {
