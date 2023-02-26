@@ -39,7 +39,7 @@
                                         @endif
                                     @endforeach
                                 @else
-                                    <img class="p-12" src="{{ asset('storage/logo/logo.png') }}" alt="website_logo">
+                                    <img class="p-12" src="{{ asset('img/logo.png') }}" alt="website_logo">
                                 @endif
 
                                 <h1 class="truncate text-sm font-semibold">{{ $question->title }}</h1>
