@@ -86,7 +86,6 @@ class QuestionController extends Controller
 
     public function category($category)
     {
-
         $questions = DB::table('questions')
             ->whereJsonContains('tags', [$category])
             ->paginate(12);
@@ -123,22 +122,22 @@ class QuestionController extends Controller
     {
         $validated = $request->validate(['search' => 'required']);
         $words = explode(" ", $validated['search']);
-        $questions = [];
+        $questionIds = [];
 
         foreach ($words as $word) {
-            $result = Question::where('title', 'like', '%' . $word . '%')->take(30)->get();
+            $result = Question::where('title', 'like', '%' . $word . '%')->take(30)->pluck('id');
 
-            foreach ($result as $question) {
-                if(!in_array($question, $questions)) {
-                    array_push($questions, $question);
-                }
-            }
+            $questionIds = array_merge($questionIds, $result->toArray());
         }
+
+        $questionIds = array_unique($questionIds);
+        $questions = Question::whereIn('id', $questionIds)->get();
 
         return view('questions.question-search', [
             'questions' => $questions,
             'search' => $validated['search']
         ]);
+
     }
 
     private function extractSentence($question)
@@ -155,23 +154,33 @@ class QuestionController extends Controller
     public function getQuestionsByTag($question)
     {
         $tags = json_decode($question->tags);
-        $questionLists = [];
+        $questionIds = [];
         $questions = [];
-
+    
         foreach ($tags as $tag) {
-            $results = Question::where('title', 'like', '%'.$tag.'%')->get();
-            array_push($questionLists, $results);
+            $results = Question::where('title', 'like', '%'.$tag.'%')->pluck('id');
+            array_push($questionIds, $results->toArray());
         }
-
-        foreach ($questionLists as $questionList) {
-            foreach ($questionList as $currentQuestion) {
-                if(!in_array($currentQuestion, $questions) && $question->id !== $currentQuestion->id) {
-                    array_push($questions, $currentQuestion);
-                }
-            }
-        }
-
+    
+        $questionIds = array_unique(array_merge(...$questionIds));
+    
+        $questions = Question::whereIn('id', $questionIds)
+                        ->where('id', '!=', $question->id)
+                        ->get();
+    
         return $questions;
+    }
+
+    public function showQuestionsByTag($tag)
+    {
+        $questions = DB::table('questions')
+        ->whereJsonContains('tags', [$tag])
+        ->paginate(12);
+
+        return view('questions.tag-question',[
+            'questions' => $questions,
+            'tag' => $tag
+        ]);
     }
 
     function calculateReadTime($content) {
