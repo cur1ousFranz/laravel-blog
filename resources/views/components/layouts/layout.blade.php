@@ -16,8 +16,6 @@
     <link rel="stylesheet"
       href="//unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css">
 
-    @vite('resources/js/app.js')
-
     <style>
         code {
             border-radius: 10px;
@@ -42,10 +40,12 @@
     </main>
 
     <x-layouts.footer/>
-    
 
+    
+    @vite('resources/js/app.js')
     <script src="//unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
     @stack('child-scripts')
+    
 </body>
 
 </html>
