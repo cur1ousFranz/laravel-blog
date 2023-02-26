@@ -92,7 +92,7 @@
 
             <div class="relative inline-block text-left mt-3">
                 <div id="profile" class="cursor-pointer">
-                    <img src="{{ asset('storage/img/profile-default.png') }}" class="w-7" alt="">
+                    <img src="{{ asset('img/profile-default.png') }}" class="w-7" alt="">
                 </div>
                 <div id="profile-dropdown" class="hidden origin-top-right absolute right-0 mt-2 w-44 z-10 rounded-md shadow-lg">
                     <div class="rounded-md bg-white shadow-xs text-start px-2">
