@@ -29,6 +29,12 @@
 
         <x-category.categories/>
 
+        
     </div>
-   
+    
+    <div class="my-44">
+        <h1 class="text-center text-2xl font-bold italic uppercase text-gray-600">
+            “Code is like humor. When you have to explain it, it’s bad.” <br> – Cory House
+        </h1>
+    </div>
 </x-layouts.layout>

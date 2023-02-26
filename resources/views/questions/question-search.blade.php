@@ -1,4 +1,4 @@
-<x-layouts.layout title="{{ $search }}">
+<x-layouts.layout title="{{ $search }} - Search">
     <div class="px-4 mt-8">
         <div class="w-full flex">
             <div class="hidden w-96 md:block">

@@ -1,4 +1,4 @@
-<footer class="w-full p-12 mt-16 bg-gray-100 border-t text-gray-800 sticky top-[100vh]">
+<footer class="w-full px-12 pt-12 mt-16 bg-gray-100 border-t text-gray-800 sticky top-[100vh]">
     <div class="max-w-screen-xl mx-auto px-6 flex-col justify-center">
         <a href="{{ route('home') }}" class="flex justify-center">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" class="h-14" viewBox="0 0 411.000000 214.000000"
@@ -63,5 +63,16 @@
             </svg>
         </a>
         <h1 class="text-center">All rights reserved &#169; {{ date('Y') }}</h1>
+        <div class="flex justify-center">
+            <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
+                About us
+            </a>
+            <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('disclaimer') }}">
+                Disclaimer
+            </a>
+            {{-- <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="#">
+                Contact us
+            </a> --}}
+        </div> 
     </div>
 </footer>

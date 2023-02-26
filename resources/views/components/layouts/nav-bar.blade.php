@@ -69,11 +69,25 @@
             </svg>
         </button>
     </div>
+    @php
+        $categories = [
+            'laravel',
+            'vuejs',
+            'angular',
+            'react',
+            'jquery',
+            'javascript',
+            'mysql',
+            'php',
+            'apache',
+            'composer',
+        ];
+    @endphp
     <div class="hidden space-x-2 lg:flex">
-        <a class="block p-4 text-sm font-semibold text-gray-700 hover:underline hover:text-gray-900"
-        href="{{ route('home') }}">Home</a>
-        <a class="block p-4 text-sm font-semibold text-gray-700 hover:underline hover:text-gray-900"
-        href="{{ route('about') }}">About</a>
+        @foreach ($categories as $category)
+            <a class="block uppercase p-4 text-sm font-semibold text-gray-700 hover:underline hover:text-gray-900"
+            href="{{ route('category', [$category]) }}">{{ $category }}</a>
+        @endforeach
         @if (Auth::user())
 
             <div class="relative inline-block text-left mt-3">
@@ -101,10 +115,10 @@
                     </div>
                 </div>
             </div>
-
+{{-- 
         @else
             <a class="hidden lg:inline-block py-2 px-6 mt-2 h-fit bg-gray-700 hover:bg-gray-900 text-sm text-white font-bold rounded-xl transition duration-200"
-                href="{{ route('login') }}">Sign in</a>
+                href="{{ route('login') }}">Sign in</a> --}}
         @endif
     </div>
 
@@ -188,24 +202,44 @@
         </div>
         <div>
             <ul>
-                <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                @foreach ($categories as $category)
+                    <li class="mb-1">
+                        <a class="block uppercase p-4 text-sm font-semibold text-gray-700 hover:underline hover:text-gray-900"
+                            href="{{ route('category', [$category]) }}">
+                            {{ $category }}
+                        </a>
+                        
+                    </li>
+                @endforeach
+                {{-- <li class="mb-1">
+                    <a class="block uppercase p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
                         href="{{ route('home') }}">Home</a>
                 </li>
                 <li class="mb-1">
-                    <a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
+                    <a class="block uppercase p-4 text-sm font-semibold text-gray-400 hover:bg-gray-50 hover:text-gray-900 rounded"
                         href="{{ route('about') }}">About</a>
-                </li>
+                </li> --}}
             </ul>
         </div>
         <div class="mt-auto">
-            <div class="pt-6">
+            {{-- <div class="pt-6">
                 <a class="block px-4 py-3 mb-3  text-xs text-center font-semibold  bg-gray-700 hover:bg-gray-900 text-white rounded-xl"
                     href="{{ route('login') }}">Sign in</a>
-            </div>
-            <p class="my-4 text-xs text-center text-gray-400">
+            </div> --}}
+            <p class="my-4 text-xs text-center text-gray-700">
                 <span>Copyright © 2021</span>
             </p>
+            <div class="flex justify-center">
+                <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
+                    About us
+                </a>
+                <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('disclaimer') }}">
+                    Disclaimer
+                </a>
+                {{-- <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="#">
+                    Contact us
+                </a> --}}
+            </div> 
         </div>
     </nav>
 </div>

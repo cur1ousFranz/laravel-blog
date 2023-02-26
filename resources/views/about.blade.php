@@ -9,7 +9,7 @@
                     {{-- ADS --}}
                 </div>
                 <div>
-                    <h1 class="text-2xl font-bold mb-2 text-gray-800">About Us</h1>
+                    <h1 class="uppercase text-2xl font-bold mb-6 text-gray-800">About Us</h1>
                     <p class="text-lg text-gray-800">
                         Welcome to Snippet, the ultimate destination for coding enthusiasts and developers seeking solutions for their coding problems. We are a team of passionate writers, software engineers, and tech enthusiasts committed to bringing you the latest updates and solutions to help you stay ahead in the world of programming.
                         <br><br>
