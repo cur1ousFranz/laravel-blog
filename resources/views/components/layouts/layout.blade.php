@@ -46,8 +46,8 @@
 <body class="antialiased min-h-screen bg-gray-50">
 
     <x-layouts.nav-bar/>
-    <div class="flex justify-end relative">
-        <div class="py-2 absolute lg:m-2 w-full lg:w-1/4 text-center rounded cursor-pointer bg-yellow-300 hover:bg-yellow-400">
+    <div class="flex justify-end">
+        <div class="py-2 lg:m-2 w-full lg:w-1/4 text-center rounded cursor-pointer bg-yellow-300 hover:bg-yellow-400">
             <a class="space-x-1 -tracking-tight text-gray-700" href="https://vrlps.co/ksqmnq8/cp" target="_blank">
                 <span class="inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
