@@ -7,9 +7,14 @@
     
     <title>@isset($title){{ $title }} @else Coding Snippet Stuff @endisset</title>
     <meta name="description" content="@isset($description){{ $description }}@endisset">
+    <meta property="og:local" content="en_US">
+    <meta property="og:type" content="article">
     <meta property="og:title" content="@isset($title){{ $title }}@endisset">
     <meta property="og:description" content="@isset($description){{ $description }}@endisset">
-    
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="CodeSnippetStuff">
+    <meta property="author" content="CodeSnippetStuff">
+
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.png') }}"/>
     <script src="https://cdn.tiny.cloud/1/t6ma4oxtlblgdc5mskjxpxgs6ham551qbxdkw09lip31ej1k/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
