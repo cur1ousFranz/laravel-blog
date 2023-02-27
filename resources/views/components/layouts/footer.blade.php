@@ -1,9 +1,9 @@
 <footer class="w-full px-12 py-6 mt-16 bg-gray-100 border-t text-gray-800 sticky top-[100vh]">
     <div class="max-w-screen-xl mx-auto px-6 flex-col justify-center">
-        <div class="flex justify-around">
+        <div class="flex space-x-10">
             <div class="mb-12 space-y-4 lg:mb-6">
                 <h1 class="uppercase font-bold lg:text-lg text-gray-700">Follow us on</h1>
-                <div class="flex space-x-6">
+                <div class="flex space-x-12">
                     <a class="text-gray-800 hover:text-gray-900" href="https://www.facebook.com/profile.php?id=100090395242646" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -21,7 +21,7 @@
                     </a>
                 </div>
             </div>
-            <div class="space-y-1">
+            <div class="mb-12 space-y-4 lg:mb-6">
                 <h1 class="uppercase mb-4 font-bold lg:text-lg text-gray-700">Info</h1>
                 <div class="">
                     <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
