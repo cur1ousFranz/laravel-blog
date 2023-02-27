@@ -24,3 +24,7 @@ Route::get('/question/{question:slug}', [QuestionController::class, 'show'])->na
 Route::get('/question/tag/{tag}', [QuestionController::class, 'showQuestionsByTag'])->name('question-tag');
 Route::post('/question/search', [QuestionController::class, 'searchQuestion'])->name('question-search');
 Route::get('/category/{category}', [QuestionController::class, 'category'])->name('category');
+
+Route::fallback(function () {
+    return view('404');
+});

@@ -43,16 +43,23 @@ class QuestionController extends Controller
         ]);
     }
 
-    public function show(Question $question)
+    public function show($question)
     {
-        $description = $this->extractSentence($question);
-        $questions = $this->getQuestionsByTag($question);
+        $result = Question::where('slug', $question)->first();
 
-        return view('questions.question-show', [
-            'question' => $question, 
-            'description' => $description,
-            'questions' => $questions
-        ]);
+        if($result) {
+            $description = $this->extractSentence($result);
+            $questions = $this->getQuestionsByTag($result);
+
+            return view('questions.question-show', [
+                'question' => $result, 
+                'description' => $description,
+                'questions' => $questions
+            ]);
+
+        }
+        
+        return view('404');
     }
 
     public function edit(Question $question)
