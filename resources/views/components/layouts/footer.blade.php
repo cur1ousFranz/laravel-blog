@@ -29,8 +29,8 @@
                 </a>
             </div>
         </div>
-        <div class="flex justify-center space-x-3 mb-12 mt-6 space-y-2 lg:mb-6">
-            <div class="mt-2">
+        <div class="flex justify-center space-x-3 mb-6 mt-6 lg:mb-6">
+            <div>
                 <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
                     About us
                 </a>
