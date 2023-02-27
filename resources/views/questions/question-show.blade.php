@@ -71,7 +71,7 @@
         color: blue;
     }
 
-    p, code {
+    p {
         font-size: 1.125rem/* 18px */;
         line-height: 1.75rem/* 28px */;
     }

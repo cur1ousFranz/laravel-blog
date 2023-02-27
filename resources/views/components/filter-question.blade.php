@@ -22,7 +22,7 @@
 
                             @endphp
 
-                            <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="relative p-4 border shadow-sm space-y-1 rounded-md hover:shadow-lg border-gray-400 hover:border-gray-800">
+                            <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="relative py-6 px-4 border shadow-sm space-y-1 rounded-md hover:shadow-lg border-gray-400 hover:border-gray-800">
                                 <p class="abosulte w-fit px-2 py-1  rounded-l-md border-l-4 shadow-sm shadow-gray-300 border-gray-700 -ml-6 space-x-2 -mt-3 text-xs bg-gray-200">
                                     <span class="inline-block">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
@@ -39,7 +39,7 @@
                                         @endif
                                     @endforeach
                                 @else
-                                    <img class="p-12" src="{{ asset('img/logo.png') }}" alt="website_logo">
+                                    <img class="p-12" src="{{ asset('img/logo_svg.svg') }}" alt="website_logo">
                                 @endif
 
                                 <h1 class="truncate text-sm font-semibold">{{ $question->title }}</h1>
