@@ -14,7 +14,8 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:site_name" content="CodeSnippetStuff">
     <meta property="author" content="CodeSnippetStuff">
-
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
+    crossorigin="anonymous"></script>
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/logo.png') }}"/>
     <script src="https://cdn.tiny.cloud/1/t6ma4oxtlblgdc5mskjxpxgs6ham551qbxdkw09lip31ej1k/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
