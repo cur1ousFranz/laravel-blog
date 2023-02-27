@@ -1,117 +1,44 @@
 <footer class="w-full px-12 py-6 mt-16 bg-gray-100 border-t text-gray-800 sticky top-[100vh]">
-    <div class="lg:flex lg:justify-between">
-        <a href="{{ route('home') }}" class="hidden lg:flex lg:justify-center">
-            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" height="60.000000pt" viewBox="0 0 404.000000 176.000000"preserveAspectRatio="xMidYMid meet">
-       
-                <g transform="translate(0.000000,176.000000) scale(0.100000,-0.100000)"
-                fill="#000000" stroke="none">
-                <path d="M406 1530 c-35 -11 -63 -36 -84 -75 -14 -25 -16 -66 -17 -235 0 -193
-                -1 -207 -23 -247 -28 -54 -85 -93 -134 -93 -26 0 -40 -6 -47 -19 -13 -24 -5
-                -31 34 -31 49 0 118 -50 145 -104 29 -62 37 -136 28 -276 -14 -237 14 -280
-                185 -280 82 0 97 6 97 36 0 2 -40 4 -90 4 -84 0 -92 2 -121 28 -41 36 -49 83
-                -38 231 13 194 -14 304 -91 360 l-37 27 39 38 c75 71 83 103 83 333 1 222 6
-                244 58 263 16 5 65 10 107 10 59 0 79 4 83 15 4 8 3 16 -1 18 -15 8 -149 5
-                -176 -3z"/>
-                <path d="M3476 1531 c-13 -20 17 -29 101 -32 84 -4 95 -6 119 -31 l27 -26 1
-                -209 c1 -237 9 -268 84 -339 l39 -38 -37 -27 c-77 -56 -104 -159 -92 -353 11
-                -160 4 -201 -37 -238 -29 -26 -37 -28 -122 -28 -79 0 -90 -2 -85 -16 3 -9 6
-                -18 6 -20 0 -2 39 -4 86 -4 103 0 145 16 168 65 18 38 21 79 17 275 -1 74 2
-                150 8 169 26 86 101 151 171 151 27 0 31 3 28 23 -2 18 -11 23 -48 27 -57 7
-                -104 40 -133 93 -21 40 -22 54 -22 247 0 186 -2 208 -20 239 -36 62 -66 76
-                -166 78 -49 1 -91 -2 -93 -6z"/>
-                <path d="M715 1180 c-27 -11 -61 -49 -74 -83 -18 -46 -13 -124 10 -168 37 -73
-                149 -100 209 -51 18 14 19 20 8 34 -12 16 -17 16 -52 4 -76 -26 -116 11 -116
-                109 0 80 24 115 78 115 20 0 44 -4 52 -10 16 -10 40 5 40 25 0 29 -105 46
-                -155 25z"/>
-                <path d="M919 1175 c-38 -21 -62 -77 -61 -149 0 -113 45 -172 129 -170 46 1
-                87 29 103 69 7 15 9 10 9 -22 l1 -43 63 0 c71 0 120 20 151 63 17 23 21 43 21
-                102 0 116 -41 156 -163 159 l-67 1 -5 -40 c-5 -34 -7 -37 -13 -18 -20 56 -107
-                81 -168 48z m108 -65 c7 -14 13 -50 13 -81 0 -103 -33 -149 -84 -116 -37 25
-                -49 128 -21 193 13 31 18 35 47 32 23 -2 36 -10 45 -28z m223 4 c11 -10 15
-                -36 15 -90 0 -68 -3 -78 -24 -95 -13 -10 -34 -19 -47 -19 -24 0 -24 0 -24 116
-                l0 117 32 -7 c18 -4 40 -13 48 -22z"/>
-                <path d="M1357 1183 c-4 -3 -7 -78 -7 -165 l0 -158 105 0 105 0 0 25 c0 24 -2
-                25 -70 25 l-70 0 0 45 0 45 55 0 c52 0 55 1 55 25 0 24 -3 25 -55 25 l-55 0 0
-                45 0 45 64 0 c49 0 65 4 70 16 3 9 4 20 0 25 -6 10 -187 13 -197 2z"/>
-                <path d="M1829 1161 c-57 -58 -33 -118 62 -152 66 -24 86 -47 69 -79 -15 -29
-                -55 -35 -102 -16 -40 15 -68 9 -68 -15 0 -12 50 -36 93 -44 44 -8 121 16 137
-                43 8 14 9 12 10 -10 0 -24 4 -28 30 -28 l29 0 3 117 3 117 40 -114 40 -115 43
-                -3 42 -3 0 166 0 166 -27 -3 -28 -3 0 -122 c0 -68 0 -123 -1 -123 -1 0 -21 56
-                -44 125 l-43 125 -38 0 c-24 0 -41 -6 -47 -15 -7 -14 -11 -14 -38 0 -16 8 -53
-                15 -82 15 -46 0 -58 -4 -83 -29z m201 -88 l0 -76 -22 21 c-13 11 -45 29 -72
-                39 -53 19 -73 41 -63 67 8 19 86 23 105 4 10 -9 16 -8 29 5 10 9 19 17 20 17
-                2 0 3 -35 3 -77z"/>
-                <path d="M2280 1166 c0 -21 6 -25 33 -28 l32 -3 3 -112 3 -113 -36 0 c-31 0
-                -35 -3 -35 -25 l0 -25 100 0 100 0 0 25 c0 22 -4 25 -35 25 l-35 0 0 115 0
-                115 35 0 c31 0 35 3 35 25 l0 25 -100 0 c-99 0 -100 0 -100 -24z"/>
-                <path d="M2510 1026 l0 -166 30 0 c30 0 30 1 30 54 l0 53 51 6 c58 7 96 28
-                109 60 6 15 9 -9 9 -75 l1 -98 35 0 35 0 0 55 c0 54 0 55 29 55 39 0 81 16
-                109 42 17 17 22 33 22 69 0 40 -4 51 -30 72 -31 26 -106 42 -165 35 -27 -3
-                -30 -7 -33 -42 -3 -38 -4 -39 -16 -15 -17 34 -56 50 -142 56 l-74 6 0 -167z
-                m138 98 c49 -34 15 -104 -50 -104 -28 0 -28 1 -28 60 0 59 0 60 28 60 15 0 38
-                -7 50 -16z m237 2 c11 -8 18 -26 18 -46 0 -38 -23 -60 -65 -60 -28 0 -28 1
-                -28 60 0 59 0 60 28 60 16 0 37 -6 47 -14z"/>
-                <path d="M2990 1025 l0 -165 100 0 100 0 0 25 c0 24 -2 25 -70 25 l-70 0 0 45
-                0 45 60 0 c57 0 60 1 60 25 0 24 -3 25 -60 25 l-60 0 0 45 0 46 113 -3 112 -3
-                3 -137 3 -138 29 0 29 0 3 138 3 137 48 3 c42 3 47 5 47 28 l0 24 -225 0 -225
-                0 0 -165z"/>
-                <path d="M1479 601 c-57 -58 -33 -118 62 -152 66 -24 86 -47 69 -79 -15 -29
-                -55 -35 -102 -16 -31 12 -45 13 -55 5 -20 -17 -16 -27 15 -43 50 -26 99 -30
-                148 -11 50 19 66 41 66 92 0 45 -30 76 -96 100 -53 19 -73 41 -63 67 8 19 86
-                23 105 4 9 -9 15 -9 24 0 7 7 34 12 60 12 l48 0 0 -140 0 -140 35 0 35 0 0
-                140 0 140 40 0 40 0 0 -95 c0 -119 15 -160 66 -181 50 -21 104 -11 140 27 29
-                30 29 31 29 162 l0 132 -32 3 -33 3 0 -125 c0 -113 -2 -128 -20 -146 -25 -25
-                -42 -25 -63 -2 -13 14 -17 44 -19 142 l-3 125 -152 3 c-129 2 -153 0 -153 -12
-                0 -13 -3 -13 -27 0 -16 7 -52 14 -81 14 -46 0 -58 -4 -83 -29z"/>
-                <path d="M2180 465 l0 -165 30 0 30 0 0 65 0 65 60 0 c57 0 60 1 60 25 0 24
-                -3 25 -60 25 l-60 0 0 50 0 50 70 0 c68 0 70 1 70 25 l0 25 -100 0 -100 0 0
-                -165z"/>
-                <path d="M2410 465 l0 -165 35 0 35 0 0 65 0 65 55 0 c52 0 55 1 55 25 0 24
-                -3 25 -55 25 l-55 0 0 50 0 50 64 0 c55 0 64 3 69 19 3 11 2 22 -1 25 -3 3
-                -50 6 -104 6 l-98 0 0 -165z"/>
-                </g>
-           </svg>
-        </a>
-        <div class="flex space-x-12 justify-around">
-            <div class="mb-12 space-y-4 lg:mb-6">
-                <h1 class="uppercase font-bold lg:text-lg text-gray-700">Follow us on</h1>
-                <div class="flex space-x-6">
-                    <a class="text-gray-800 hover:text-gray-900" href="https://www.facebook.com/profile.php?id=100090395242646" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                        </svg>
-                    </a>
-                    <a class="text-gray-800 hover:text-gray-900" href="https://twitter.com/codesnippetstuf" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                        </svg>
-                    </a>
-                    <a class="text-gray-800 hover:text-gray-900" href="mailto:codesnippetstuff@gmail.com?" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                        </svg>
-                    </a>
-                </div>
+    <div class="flex justify-around">
+        <div class="mb-12 space-y-4 lg:mb-6">
+            <h1 class="uppercase font-bold lg:text-lg text-gray-700">Follow us on</h1>
+            <div class="flex space-x-6">
+                <a class="text-gray-800 hover:text-gray-900" href="https://www.facebook.com/profile.php?id=100090395242646" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                </a>
+                <a class="text-gray-800 hover:text-gray-900" href="https://twitter.com/codesnippetstuf" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                    </svg>
+                </a>
+                <a class="text-gray-800 hover:text-gray-900" href="mailto:codesnippetstuff@gmail.com?" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                </a>
             </div>
-            <div class="space-y-1">
-                <h1 class="uppercase font-bold lg:text-lg text-gray-700">Info</h1>
-                <div class="space-y-4">
-                    <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
-                        About us
-                    </a>
-                    {{-- <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="#">
-                        Contact us
-                    </a> --}}
-                </div>
-                <div>
-                    <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('disclaimer') }}">
-                        Disclaimer
-                    </a>
-                </div>
-            </div> 
         </div>
+        <div class="space-y-1">
+            <h1 class="uppercase mb-4 font-bold lg:text-lg text-gray-700">Info</h1>
+            <div class="">
+                <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
+                    About us
+                </a>
+            </div>
+                {{-- <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="#">
+                    Contact us
+                </a> --}}
+            <div>
+                <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('disclaimer') }}">
+                    Disclaimer
+                </a>
+            </div>
+        </div> 
     </div>
     <div class="max-w-screen-xl mx-auto px-6 flex-col justify-center">
-        <h1 class="text-center text-sm lg:text-lg">Code Snippet Stuff &#169; {{ date('Y') }}</h1>
+        <h1 class="text-center text-sm">Code Snippet Stuff</h1>
+        <h1 class="text-center text-sm">All rights reserved &#169; {{ date('Y') }}</h1>
     </div>
 </footer>
