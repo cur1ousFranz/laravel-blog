@@ -1,10 +1,7 @@
 <x-layouts.layout title="About">
     <div class="px-4 mt-8">
-        <div class="w-full flex">
-            <div class="hidden w-96 md:block">
-                {{-- ADS --}}
-            </div>
-            <div class="w-full p-4 shadow-sm">
+        <div class="w-full flex lg:space-x-1">
+            <div class="p-6 w-full" style="max-width: 60rem;">
                 <div class="mb-4">
                     {{-- ADS --}}
                 </div>
@@ -24,7 +21,7 @@
                     {{-- ADS --}}
                 </div>
             </div>
-            <div class="hidden w-96 md:block">
+            <div class="hidden w-96 lg:block">
                  {{-- ADS --}}
             </div>
         </div>

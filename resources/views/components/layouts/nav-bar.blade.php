@@ -87,9 +87,7 @@
             'react',
             'jquery',
             'javascript',
-            'mysql',
             'php',
-            'apache',
             'composer',
         ];
     @endphp
@@ -237,7 +235,7 @@
                     href="{{ route('login') }}">Sign in</a>
             </div> --}}
             <p class="my-4 text-xs text-center text-gray-700">
-                <span>Copyright © 2021</span>
+                <span>Code Snippet Stuff &#169; {{ date('Y') }}</span>
             </p>
             <div class="flex justify-center">
                 <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
@@ -254,7 +252,6 @@
     </nav>
 </div>
 
-@push('child-scripts')
 
 <script>
     tinymce.init({
@@ -312,4 +309,3 @@
 
 </script>
 
-@endpush

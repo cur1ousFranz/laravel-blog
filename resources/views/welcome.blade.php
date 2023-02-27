@@ -1,7 +1,7 @@
 <x-layouts.layout>
     <div class="px-12 mt-8 min-h-screen">
         
-        <form action="{{ route('question-search') }}" class="w-full flex justify-end" method="POST">
+        <form action="{{ route('question-search') }}" class="mt-12 w-full flex justify-start" method="POST">
             @csrf
             <input type="text" name="search" class="px-4 shadow-md py-2 border w-full rounded-full focus:outline-none md:w-2/4 border-gray-900" placeholder="Search">
         </form>
@@ -26,8 +26,10 @@
                 <img class="rounded-lg shadow-2xl mt-6 rotate-2" src="{{ asset('img/code-hero.jpg') }}" alt="code_image">
             </div>
         </div>
-
-        <x-category.categories/>
+        
+        <section class="categories mt-4">
+            <x-category.categories/>
+        </section>
 
         
     </div>
