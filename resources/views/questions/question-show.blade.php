@@ -72,14 +72,3 @@
         </div>
     </div>
 </x-layouts.layout>
-
-<style>
-    a {
-        color: blue;
-    }
-
-    p {
-        font-size: 1.125rem/* 18px */;
-        line-height: 1.75rem/* 28px */;
-    }
-</style>
