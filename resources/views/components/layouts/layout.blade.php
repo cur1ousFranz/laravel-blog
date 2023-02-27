@@ -5,13 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>@isset($title){{ $title }} @else Coding Snippet Stuff @endisset</title>
+    <title>@isset($title){{ $title }} @else Code Snippet Stuff @endisset</title>
     <meta name="description" content="@isset($description){{ $description }}@endisset">
     <meta property="og:local" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="@isset($title){{ $title }}@endisset">
     <meta property="og:description" content="@isset($description){{ $description }}@endisset">
     <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ url('img/logo.png') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="CodeSnippetStuffLogo">
     <meta property="og:site_name" content="CodeSnippetStuff">
     <meta property="author" content="CodeSnippetStuff">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
