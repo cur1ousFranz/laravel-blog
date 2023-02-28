@@ -1,10 +1,7 @@
 <x-layouts.layout title="{{ $question->title }}" description="{{ $description }}">
     <div class="mt-8">
         <div class="w-full flex lg:space-x-1">
-            <div class="p-6 w-full" style="max-width: 60rem;">
-                <div>
-                    {{-- ADS --}}
-                </div>
+            <div class="p-6 space-y-12 w-full" style="max-width: 60rem;">
                 @if (Auth::user())
                     <div class="flex justify-end space-x-2">
                         <span class="cursor-pointer hover:underline text-gray-900">
@@ -56,28 +53,26 @@
                         {{-- ADS --}}
                     </div>
                 </div>
-                <div class="p-6 my-16 shadow-sm border rounded-md border-t-2 border-t-gray-400">
-                    <section class="related-problems">
-                        <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
-                        <div class="mt-4">
-                            @if ($questions)
-                                <ul>
-                                    @foreach ($questions->random(10) as $question)
-                                        <li class="truncate border-b border-gray-200 p-2 max-w-full hover:bg-gray-200" >
-                                            <span class="inline-block">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
-                                                </svg>
-                                            </span>
-                                            <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class=" w-full font-semibold">{{ $question->title }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            @else
-                                <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
-                            @endif
-                        </div>
-                    </section>
+                <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400">
+                    <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
+                    <div class="mt-4">
+                        @if ($questions)
+                            <ul>
+                                @foreach ($questions->random(10) as $question)
+                                    <li class="truncate border-b border-gray-200 p-2 max-w-full hover:bg-gray-200" >
+                                        <span class="inline-block">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                                            </svg>
+                                        </span>
+                                        <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class=" w-full font-semibold">{{ $question->title }}</a>
+                                    </li>
+                                @endforeach
+                            </ul>
+                        @else
+                            <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
+                        @endif
+                    </div>
                 </div>
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
