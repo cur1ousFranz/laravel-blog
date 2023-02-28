@@ -1,7 +1,7 @@
 <x-layouts.layout title="{{ $question->title }}" description="{{ $description }}">
     <div class="mt-8">
         <div class="w-full flex lg:space-x-1">
-            <div class="p-6 space-y-12 w-full" style="max-width: 60rem;">
+            <div class="p-6 w-full" style="max-width: 60rem;">
                 @if (Auth::user())
                     <div class="flex justify-end space-x-2">
                         <span class="cursor-pointer hover:underline text-gray-900">
@@ -53,7 +53,7 @@
                         {{-- ADS --}}
                     </div>
                 </div>
-                <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400">
+                <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400" style="margin-top: 50px">
                     <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
                     <div class="mt-4">
                         @if ($questions)
