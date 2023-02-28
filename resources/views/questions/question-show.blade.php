@@ -56,7 +56,7 @@
                         {{-- ADS --}}
                     </div>
                 </div>
-                <div class="p-6 mt-10 shadow-sm border rounded-md border-t-2 border-t-gray-400">
+                <div class="p-6 my-16 shadow-sm border rounded-md border-t-2 border-t-gray-400">
                     <section class="related-problems">
                         <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
                         <div class="mt-4">

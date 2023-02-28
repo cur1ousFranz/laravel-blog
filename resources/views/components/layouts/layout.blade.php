@@ -24,7 +24,7 @@
     <script src="https://cdn.tiny.cloud/1/t6ma4oxtlblgdc5mskjxpxgs6ham551qbxdkw09lip31ej1k/tinymce/6/tinymce.min.js"
         referrerpolicy="origin"></script>
     <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css">
-    @vite('resources/js/app.js')
+   
     <style>
         code {
             border-radius: 10px;
@@ -61,7 +61,8 @@
     </main>
 
     <x-layouts.footer/>
-   
+    
+    @vite('resources/js/app.js')
     <script src="//unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
     @stack('child-scripts')
     
