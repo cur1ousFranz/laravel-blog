@@ -11,7 +11,7 @@
                 {{ $header }}
                 {{-- <h1 class="text-lg mb-12 font-bold text-gray-800 lg:text-2xl ">{{ ucwords($category) }} category</h1> --}}
                 @if ($questions->count())
-                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                         @foreach ($questions as $question)
                             @php
 

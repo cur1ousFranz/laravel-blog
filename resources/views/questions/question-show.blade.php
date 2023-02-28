@@ -2,7 +2,7 @@
     <div class="mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4 pb-4">
+                <div>
                     {{-- ADS --}}
                 </div>
                 @if (Auth::user())
@@ -17,54 +17,68 @@
                         </span>
                     </div>
                 @endif
-                <section class="header">
-                    <div class="space-x-2 mb-1">
-                        <span class="date inline-block text-gray-700">
-                            {{ $question->created_at->format('F j, Y') }}
-                        </span>
-                        <span>-</span>
-                        <span class="inline-block text-gray-700">
-                            {{ $question->read_time }} min read.
-                        </span>
+                <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400">
+                    <section class="header">
+                        <div class="space-x-2 mb-1">
+                            <span class="date text-sm inline-block text-gray-700">
+                                <span class="inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                                        <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                                        <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                      </svg>  
+                                </span>
+                                {{ $question->created_at->format('F j, Y') }}
+                            </span>
+                            <span class="read-time text-sm inline-block text-gray-700">
+                                <span class="inline-block mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                        <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                      </svg>
+                                </span>
+                                {{ $question->read_time }} min read.
+                            </span>
+                        </div>
+                        <h1 class="text-xl font-bold mb-10 text-gray-800 md:text-4xl">{{ $question->title }}</h1>
+                    </section>
+                    <section class="body">
+                        {!! $question->body !!}</code>
+                    </section>
+                    <section class="footer">
+                        <div class="tags mt-2 flex flex-wrap overflow-auto">
+                            @foreach (json_decode($question->tags) as $tag)
+                                <a href="{{ route('question-tag', [$tag]) }}" class="py-1 mx-1 px-2 my-1 w-fit rounded-md text-sm text-white bg-gray-700 hover:bg-gray-900">
+                                    {{ $tag }}
+                                </a>
+                            @endforeach
+                        </div>
+                    </section>
+                    <div class="mt-6 pb-4">
+                        {{-- ADS --}}
                     </div>
-                    <h1 class="text-xl font-bold mb-10 text-gray-800 md:text-4xl">{{ $question->title }}</h1>
-                </section>
-                <section class="body">
-                    {!! $question->body !!}</code>
-                </section>
-                <section class="footer">
-                    <div class="tags mt-2 flex flex-wrap overflow-auto">
-                        @foreach (json_decode($question->tags) as $tag)
-                            <a href="{{ route('question-tag', [$tag]) }}" class="py-1 mx-1 px-2 my-1 w-fit rounded-md text-sm text-white bg-gray-700 hover:bg-gray-900">
-                                {{ $tag }}
-                            </a>
-                        @endforeach
-                    </div>
-                </section>
-                <div class="mt-6 pb-4">
-                    {{-- ADS --}}
                 </div>
-                <section class="related-problems">
-                    <div class="mt-12">
-                        <h1 class="text-lg font-bold text-gray-800 md:text-2xl">Related problems</h1>
+                <div class="p-6 mt-10 shadow-sm border rounded-md border-t-2 border-t-gray-400">
+                    <section class="related-problems">
+                        <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
                         <div class="mt-4">
                             @if ($questions)
-                                @foreach ($questions->random(10) as $question)
-                                    <div class="p-2 max-w-full rounded hover:bg-gray-200" >
-                                        <span class="inline-block">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
-                                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
-                                            </svg>
-                                        </span>
-                                        <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class=" w-full font-semibold underline hover:cursor-pointer text-blue-500 hover:text-blue-700">{{ $question->title }}</a>
-                                    </div>
-                                @endforeach
+                                <ul>
+                                    @foreach ($questions->random(10) as $question)
+                                        <li class="truncate border-b border-gray-200 p-2 max-w-full hover:bg-gray-200" >
+                                            <span class="inline-block">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                                                </svg>
+                                            </span>
+                                            <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class=" w-full font-semibold">{{ $question->title }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
                             @else
                                 <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
                             @endif
                         </div>
-                    </div>
-                </section>
+                    </section>
+                </div>
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
                  {{-- ADS --}}
