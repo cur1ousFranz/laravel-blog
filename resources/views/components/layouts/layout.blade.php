@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>@isset($title){{ $title }} @else Code Snippet Stuff @endisset</title>
+    <title>@isset($title){{ $title }} @else CodeSnippetStuff @endisset</title>
     <meta name="description" content="@isset($description){{ $description }}@endisset">
     <meta property="og:local" content="en_US">
     <meta property="og:type" content="article">
