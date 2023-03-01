@@ -4,11 +4,16 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\UserController;
 use App\Http\Controllers\Questions\QuestionController;
 
+
+Route::fallback(function () {
+    return view('404');
+});
+
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/about', [UserController::class, 'about'])->name('about');
 Route::get('/disclaimer', [UserController::class, 'disclaimer'])->name('disclaimer');
 
-Route::get('/authenticate', [UserController::class, 'show'])->name('login')->middleware('guest');
+Route::get('/login', [UserController::class, 'show'])->name('login')->middleware('guest');
 Route::post('/authenticate', [UserController::class, 'store'])->name('authenticate');
 
 Route::group(['middleware' => 'auth'], function() {
@@ -24,7 +29,3 @@ Route::get('/question/{question:slug}', [QuestionController::class, 'show'])->na
 Route::get('/question/tag/{tag}', [QuestionController::class, 'showQuestionsByTag'])->name('question-tag');
 Route::post('/question/search', [QuestionController::class, 'searchQuestion'])->name('question-search');
 Route::get('/category/{category}', [QuestionController::class, 'category'])->name('category');
-
-Route::fallback(function () {
-    return view('404');
-});
