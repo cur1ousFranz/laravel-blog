@@ -81,3 +81,9 @@
         </div>
     </div>
 </x-layouts.layout>
+
+<style>
+    a { 
+        color: blue;
+    }
+</style>
