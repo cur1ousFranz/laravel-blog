@@ -13,7 +13,7 @@ Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/about', [UserController::class, 'about'])->name('about');
 Route::get('/disclaimer', [UserController::class, 'disclaimer'])->name('disclaimer');
 
-Route::get('/login', [UserController::class, 'show'])->name('login')->middleware('guest');
+Route::get('/authentication', [UserController::class, 'show'])->name('login')->middleware('guest');
 Route::post('/authenticate', [UserController::class, 'store'])->name('authenticate');
 
 Route::group(['middleware' => 'auth'], function() {
