@@ -69,8 +69,7 @@
                                     </li>
                                 @endforeach
                             </ul>
-                        @endif
-                        @if ($question->count() > 0)
+                        @elseif($question->count() > 0 && $question->count() < 10)
                             <ul>
                                 @foreach ($questions as $question)
                                     <li class="truncate border-b border-gray-200 p-2 max-w-full hover:bg-gray-200" >
@@ -83,7 +82,7 @@
                                     </li>
                                 @endforeach
                             </ul>
-                        @else
+                        @else 
                             <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
                         @endif
                     </div>
