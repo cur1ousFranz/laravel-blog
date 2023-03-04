@@ -6,9 +6,9 @@ use App\Models\Question;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Redis;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\File;
 
 class QuestionController extends Controller
 {
@@ -23,6 +23,11 @@ class QuestionController extends Controller
             'title' => ['required', Rule::unique('questions', 'title')],
             'body' => 'required',
             'tags' => 'required',
+            'img' => 'required',
+            'img_title' => 'required',
+            'img_caption' => 'required',
+            'img_alt' => 'required',
+            
         ]);
         
         $question = auth()->user()->questions()->create([
@@ -32,6 +37,21 @@ class QuestionController extends Controller
             'tags' => json_encode(explode (",", $validated['tags'])),
             'read_time' => $this->calculateReadTime($validated['body']),
         ]);
+
+        $file = $validated['img'];
+        $filename = Str::slug($question->title) . '.' . $file->getClientOriginalExtension();
+        $path = public_path('uploads');
+        $file->move($path, $filename);
+        $url = url('/uploads/' . $filename);
+
+        $imageData = [
+            'img_path' => $url,
+            'img_title' => $validated['img_title'],
+            'img_caption' => $validated['img_caption'],
+            'img_alt' => $validated['img_alt'],
+        ];
+
+        $question->image()->create($imageData);
 
         $description = $this->extractSentence($question);
         $questions = $this->getQuestionsByTag($question);
@@ -45,14 +65,14 @@ class QuestionController extends Controller
 
     public function show($question)
     {
-        $result = Question::where('slug', $question)->first();
+        $questionResult = Question::with('image')->where('slug', $question)->first();
 
-        if($result) {
-            $description = $this->extractSentence($result);
-            $questions = $this->getQuestionsByTag($result);
+        if($questionResult) {
+            $description = $this->extractSentence($questionResult);
+            $questions = $this->getQuestionsByTag($questionResult);
 
             return view('questions.question-show', [
-                'question' => $result, 
+                'question' => $questionResult, 
                 'description' => $description,
                 'questions' => $questions
             ]);
@@ -63,8 +83,8 @@ class QuestionController extends Controller
     }
 
     public function edit(Question $question)
-    {
-       return view('questions.question-edit', ['question' => $question]);
+    {   
+        return view('questions.question-edit', ['question' => $question->load('image')]);
     }
 
     public function update(Question $question, Request $request)
@@ -89,6 +109,45 @@ class QuestionController extends Controller
             'description' => $description,
             'questions' => $questions,
         ]);
+    }
+
+    public function updateImage(Question $question, Request $request)
+    {
+        $validated = $request->validate([
+            'img' => 'required',
+            'img_title' => 'required',
+            'img_caption' => 'required',
+            'img_alt' => 'required',
+        ]);
+        
+        if($question->image && File::exists(public_path($question->image->img_path))) {
+            File::delete(public_path($question->image->img_path));
+        }
+
+        $file = $validated['img'];
+        $filename = Str::slug($question->title) . '.' . $file->getClientOriginalExtension();
+        $path = public_path('uploads');
+        $file->move($path, $filename);
+        $url = url('/uploads/' . $filename);
+
+        $imageData = [
+            'img_path' => $url,
+            'img_title' => $validated['img_title'],
+            'img_caption' => $validated['img_caption'],
+            'img_alt' => $validated['img_alt'],
+        ];
+        
+        $question->image()->updateOrCreate([], $imageData);
+
+        $description = $this->extractSentence($question);
+        $questions = $this->getQuestionsByTag($question);
+
+        return view('questions.question-show', [
+            'question' => $question->load('image'), 
+            'description' => $description,
+            'questions' => $questions,
+        ]);
+
     }
 
     public function category($category)

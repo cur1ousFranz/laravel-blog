@@ -25,6 +25,7 @@ Route::group(['middleware' => 'auth'], function() {
     Route::post('/question', [QuestionController::class, 'store'])->name('question-create');
     Route::get('/question/edit/{question:slug}', [QuestionController::class, 'edit'])->name('question-edit');
     Route::put('/question/{question:slug}', [QuestionController::class, 'update'])->name('question-update');
+    Route::put('/question/image/{question:slug}', [QuestionController::class, 'updateImage'])->name('question-image-update');
     
 });
 Route::get('/question/{question:slug}', [QuestionController::class, 'show'])->name('question-show');
