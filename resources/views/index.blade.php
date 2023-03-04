@@ -27,6 +27,14 @@
             <lastmod>{{ $question->updated_at->tz('UTC')->toAtomString() }}</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.8</priority>
+            @if ($question->image)
+                <image:image>
+                    <image:loc>{{ $question->image->img_path }}</image:loc>
+                    <image:title>{{ $question->image->img_title }}</image:title>
+                    <image:caption>{{ $question->image->img_caption }}</image:caption>
+                    <image:alt>{{ $question->image->img_alt }}</image:alt>
+                </image:image>
+            @endif
         </url>
     @endforeach
 </urlset>
