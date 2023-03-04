@@ -11,11 +11,12 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="@isset($title){{ $title }}@endisset">
     <meta property="og:description" content="@isset($description){{ $description }}@endisset">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ url('img/logo.png') }}">
+    <meta property="og:url" content="@isset($image){{ $image }}@endisset">
+    <meta property="og:image" content="@isset($image){{ $image }}@endisset">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="@isset($imgalt){{ $imgalt }}@endisset">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="CodeSnippetStuffLogo">
     <meta property="og:site_name" content="CodeSnippetStuff">
     <meta property="author" content="CodeSnippetStuff">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
@@ -48,14 +49,14 @@
 
     <main class="max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-end">
-            {{-- <a class="absolute right-0 text-center w-full px-4 py-2 text-sm space-x-1 -tracking-tight hover:underline text-gray-700 bg-green-400 hover:bg-green-500 lg:w-fit lg:text-end" href="https://vrlps.co/ksqmnq8/cp" target="_blank">
+            <a class="absolute right-0 text-center w-full px-4 py-2 text-sm space-x-1 -tracking-tight hover:underline text-gray-700 bg-green-400 hover:bg-green-500 lg:w-fit lg:text-end" href="https://vrlps.co/ksqmnq8/cp" target="_blank">
                 <span class="inline-block">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
                         <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
                         </svg>
                 </span>
                 Get your free<span class="font-semibold">$25</span> Free hosting!
-            </a> --}}
+            </a>
         </div>
         {{ $slot }}
     </main>
