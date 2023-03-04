@@ -9,7 +9,7 @@ class SiteMapController extends Controller
 {
     public function index()
     {
-        $questions = Question::with('image')->all();
+        $questions = Question::with('image')->get();
         
         return response()->view('index', [
             'questions' => $questions
