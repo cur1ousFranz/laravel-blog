@@ -1,5 +1,5 @@
 <x-layouts.layout title="{{ $question->title }}" description="{{ $description }}" 
-    :image="$question->image ? $question->image->img_path : ''" 
+    {{-- :image="$question->image ? $question->image->img_path : ''"  --}}
     :imgalt="$question->image ? $question->image->img_alt : ''">
     <div class="mt-8">
         <div class="w-full flex lg:space-x-1">
