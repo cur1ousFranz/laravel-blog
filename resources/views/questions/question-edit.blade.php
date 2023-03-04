@@ -1,7 +1,7 @@
 <x-layouts.layout title="{{ $question->title }}">
     <div class="px-4 mt-8">
         <div class="w-full flex">
-            <div class="w-96">
+            <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
             </div>
 
@@ -51,9 +51,48 @@
                         </button>
                     </div>
                 </form>
+
+                <form action="{{ route('question-image-update', [$question->slug]) }}" class="mt-6 space-y-8 shadow-md p-4 rounded w-full" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    @method('PUT')
+                    <h1 class="text-2xl font-bold mb-2 text-gray-800">Edit Image</h1>
+                    <div>
+                        <input type="file" name="img" class="px-4 py-2 w-full border rounded-lg border-gray-900">
+                        @error('img')
+                            <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="text" name="img_title" class="px-4 py-2 w-full border rounded-lg border-gray-900" placeholder="Image Title" value="{{ $question->image ? $question->image->img_title : '' }}">
+                        @error('img_title')
+                            <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="text" name="img_caption" class="px-4 py-2 w-full border rounded-lg border-gray-900" placeholder="Image Caption" value="{{ $question->image ? $question->image->img_caption : '' }}">
+                        @error('img_caption')
+                            <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div>
+                        <input type="text" name="img_alt" class="px-4 py-2 w-full border rounded-lg border-gray-900" placeholder="Image Alt" value="{{ $question->image ? $question->image->img_alt : '' }}">
+                        @error('img_alt')
+                            <p class="text-red-500 w-full absolute text-sm">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div class="flex justify-end space-x-3">
+                        <button type="button" onclick="history.back()" class="px-4 py-2 rounded-lg bg-gray-200 hover:bg-gray-600 hover:text-white  text-gray-900">
+                            Cancel
+                        </button>
+                     
+                        <button class="px-4 py-2 rounded-lg bg-gray-800 hover:bg-gray-900 text-white">
+                            Update
+                        </button>
+                    </div>
+                </form>
             </div>
 
-            <div class="w-96">
+            <div class="hidden w-96 lg:block">
                  {{-- ADS --}}
             </div>
         </div>
