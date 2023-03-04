@@ -1,6 +1,7 @@
 <?php echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
@@ -30,9 +31,6 @@
             @if ($question->image)
                 <image:image>
                     <image:loc>{{ $question->image->img_path }}</image:loc>
-                    <image:title>{{ $question->image->img_title }}</image:title>
-                    <image:caption>{{ $question->image->img_caption }}</image:caption>
-                    <image:alt>{{ $question->image->img_alt }}</image:alt>
                 </image:image>
             @endif
         </url>
