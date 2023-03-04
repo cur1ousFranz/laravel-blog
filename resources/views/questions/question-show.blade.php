@@ -1,6 +1,6 @@
 <x-layouts.layout title="{{ $question->title }}" description="{{ $description }}" 
-    {{-- :image="$question->image ? $question->image->img_path : ''"  --}}
-    :imgalt="$question->image ? $question->image->img_alt : ''">
+    :image="$question->image ? $question->image->img_path : url('img/logo.png')" 
+    :alt="$question->image ? $question->image->img_alt : 'CodeSnippetStuff Logo'">
     <div class="mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">

@@ -11,10 +11,9 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="@isset($title){{ $title }}@endisset">
     <meta property="og:description" content="@isset($description){{ $description }}@endisset">
-    <meta property="og:url" content="https://codesnippetstuff.com/uploads/how-to-create-a-simple-crud-in-laravel.png">
-    <meta property="og:image" content="https://codesnippetstuff.com/uploads/how-to-create-a-simple-crud-in-laravel.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="@isset($imgalt){{ $imgalt }}@endisset">
+    <meta property="og:url" content="@isset($image){{ $image }}@endisset">
+    <meta property="og:image" content="@isset($image){{ $image }}@endisset">
+    <meta property="og:image:alt" content="@isset($alt){{ $alt }}@endisset">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="CodeSnippetStuff">
