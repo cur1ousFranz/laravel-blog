@@ -14,32 +14,6 @@
         </div>
         
         <h1 class="font-bold mb-6 whitespace-normal overflow-hidden">{{ $question->title }}</h1>
-        <h1 class="truncate text-xs max-w">{{ $description }}</h1>
+        <h1 class="truncate text-xs">{{ $description }}</h1>
     </div>
 </a>
-
-<style>
-    .truncate {
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    
-    @media (min-width: 640px) {
-      .max-w-sm {
-        max-width: 20rem;
-      }
-    }
-    
-    @media (min-width: 768px) {
-      .max-w-sm {
-        max-width: 25rem;
-      }
-    }
-    
-    @media (min-width: 1024px) {
-      .max-w-sm {
-        max-width: 30rem;
-      }
-    }
-</style>
