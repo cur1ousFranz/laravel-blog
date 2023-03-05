@@ -1,9 +1,7 @@
 @props(['question', 'description'])
 
-<a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="relative border shadow-sm h-fit space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
-    <img class="rounded-t-lg" src="{{ $question->image ? $question->image->img_path : asset('img/logo.png') }}" alt="{{ $question->image ? $question->image->img_alt : 'website_logo' }}" title="{{$question->image ? $question->image->img_title : 'Logo of Code Snippet Stuff' }}">
-
-    <div class="px-3 py-4">
+<a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="h-fit relative border shadow-sm space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
+    <div style="padding: 1rem; 0.75rem;">
         <div class="space-x-2 mb-1">
             <span class="read-time text-xs inline-block text-gray-700">
                 <span class="inline-block mt-1">
@@ -15,10 +13,7 @@
             </span>
         </div>
         
-        <h1 class="truncate text-sm font-semibold">{{ $question->title }}</h1>
+        <h1 class="font-bold mb-6">{{ $question->title }}</h1>
         <h1 class="truncate text-xs">{{ $description }}</h1>
-    </div>
-    <div class="py-2 w-full text-center rounded-b-lg text-xs border-t hover:underline bg-gray-50 hover:bg-gray-100">
-        Read More...
     </div>
 </a>
