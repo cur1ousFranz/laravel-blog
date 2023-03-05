@@ -13,7 +13,7 @@
             </span>
         </div>
         
-        <h1 class="font-bold mb-6">{{ $question->title }}</h1>
+        <h1 class="font-bold mb-6 whitespace-normal overflow-hidden">{{ $question->title }}</h1>
         <h1 class="truncate text-xs">{{ $description }}</h1>
     </div>
 </a>
