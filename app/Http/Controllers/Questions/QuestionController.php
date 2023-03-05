@@ -152,35 +152,13 @@ class QuestionController extends Controller
 
     public function category($category)
     {
-        $questions = DB::table('questions')
-            ->whereJsonContains('tags', [$category])
-            ->paginate(12);
-
-        $categoryLogo = [
-            'laravel' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg',
-            'vuejs' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original-wordmark.svg',
-            'angular' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original-wordmark.svg',
-            'react' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg',
-            'jquery' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg',
-            'php' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg',
-            'python' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg',
-            'bootstrap' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg',
-            'javascript' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg',
-            'mysql' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg',
-            'nodejs' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg',
-            'codeigniter' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codeigniter/codeigniter-plain-wordmark.svg',
-            'c' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg',
-            'c#' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg',
-            'c++' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
-            'docker' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg',
-            'apache' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original-wordmark.svg',
-            'composer' => 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/composer/composer-original.svg',
-        ];
+        $questions = Question::with('image')
+        ->whereJsonContains('tags', [$category])
+        ->paginate(12);
 
         return view('questions.category-question', [
             'category' => $category,
             'questions' => $questions,
-            'categoryLogo' => $categoryLogo,
         ]);
     }
 
@@ -239,9 +217,9 @@ class QuestionController extends Controller
 
     public function showQuestionsByTag($tag)
     {
-        $questions = DB::table('questions')
-        ->whereJsonContains('tags', [$tag])
-        ->paginate(12);
+        $questions = Question::with('image')
+            ->whereJsonContains('tags', [$tag])
+            ->paginate(12);
 
         return view('questions.tag-question',[
             'questions' => $questions,
