@@ -70,7 +70,7 @@
                                 @endforeach
                             </div>
                         @elseif($question->count() > 0)
-                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
                                 @foreach ($questions as $question)
                                     @php
                                         $description = preg_match('/^([^\.!?]*[\.!?]+){2}/', $question->body, $matches);

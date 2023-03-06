@@ -1,6 +1,6 @@
 @props(['question', 'description'])
 
-<a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="h-fit relative border shadow-sm space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
+<a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="relative border shadow-sm space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
     <div style="padding: 1rem; 0.75rem;">
         <div class="space-x-2 mb-1">
             <span class="read-time text-xs inline-block text-gray-700">
@@ -13,7 +13,7 @@
             </span>
         </div>
         
-        <h1 class="font-bold mb-6 whitespace-normal overflow-hidden">{{ $question->title }}</h1>
+        <h1 style="white-space: normal; overflow: hidden" class="font-bold mb-6">{{ $question->title }}</h1>
         <h1 class="truncate text-xs">{{ $description }}</h1>
     </div>
 </a>

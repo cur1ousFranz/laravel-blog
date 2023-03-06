@@ -5,7 +5,7 @@
                 <div class="mb-4">
                     {{-- ADS --}}
                 </div>
-
+                
                 <form action="{{ route('question-search') }}" class="w-full flex justify-center" method="POST">
                     @csrf
                     <input type="text" name="search" class="rounded-full px-4 py-2 w-full border focus:outline-none  border-gray-900 " placeholder="Search" value="{{ old('search') ?? $search }}">
@@ -15,7 +15,7 @@
                 </form>
                 <div class="mt-12">
                     @if ($questions->count())
-                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
                             @foreach ($questions as $question)
                                 @php
                                     $description = preg_match('/^([^\.!?]*[\.!?]+){2}/', $question->body, $matches);
@@ -32,14 +32,10 @@
                     @endif
                 </div>
 
-                <div class="mt-6">
-                    {{-- ADS --}}
-                </div>
-
             </div>
-            <div class="hidden w-96 lg:block">
-                 {{-- ADS --}}
-            </div>
+            <div class="hidden w-80 lg:block" style="min-width: 300px;">
+                {{-- ADS --}}
+           </div>
         </div>
     </div>
 </x-layouts.layout>
