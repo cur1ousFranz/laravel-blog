@@ -2,7 +2,7 @@
 
 <a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="relative border shadow-sm space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
     @if ($image)
-        <img src="{{ $image }}" alt="{{ $alt }}">
+        <img src="{{ $image }}" alt="{{ $alt }}" style="border-top-left-radius: 0.375rem; border-top-right-radius: 0.375rem">
     @endif
     <div style="padding: 1rem; 0.75rem;">
         <div class="space-x-2 mb-1">
