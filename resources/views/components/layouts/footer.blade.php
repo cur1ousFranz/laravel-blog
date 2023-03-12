@@ -43,6 +43,11 @@
                     Disclaimer
                 </a>
             </div>
+            <div>
+                <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('privacy') }}">
+                    Privacy Policy
+                </a>
+            </div>
         </div> 
 
         <h1 class="text-center text-sm">Code Snippet Stuff</h1>

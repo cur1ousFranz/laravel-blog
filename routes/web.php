@@ -13,6 +13,7 @@ Route::fallback(function () {
 Route::get('/', [UserController::class, 'index'])->name('home');
 Route::get('/about', [UserController::class, 'about'])->name('about');
 Route::get('/disclaimer', [UserController::class, 'disclaimer'])->name('disclaimer');
+Route::get('/privacy', [UserController::class, 'privacy'])->name('privacy');
 
 Route::get('/authentication', [UserController::class, 'show'])->name('login')->middleware('guest');
 Route::post('/authenticate', [UserController::class, 'store'])->name('authenticate');

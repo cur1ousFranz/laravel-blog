@@ -243,6 +243,9 @@
                 <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('disclaimer') }}">
                     Disclaimer
                 </a>
+                <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('privacy') }}">
+                    Privacy Policy
+                </a>
                 {{-- <a class="text-center uppercase p-4 text-xs font-semibold text-gray-700 hover:underline hover:text-gray-900" href="#">
                     Contact us
                 </a> --}}
