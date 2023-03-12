@@ -21,6 +21,11 @@
         <lastmod>{{ \Carbon\Carbon::now('UTC')->toIso8601String() }}</lastmod>
         <priority>0.80</priority>
     </url>
+    <url>
+        <loc>{{ url('/') }}/privacy</loc>
+        <lastmod>{{ \Carbon\Carbon::now('UTC')->toIso8601String() }}</lastmod>
+        <priority>0.80</priority>
+    </url>
 
     @foreach ($questions as $question)
         <url>
