@@ -66,7 +66,7 @@
                                         $description = $matches[0];
                                         $description = preg_replace('/<[^>]*>/', '', $description);
                                     @endphp
-                                    <x-question-container :question="$question" :description="$description"/>
+                                    <x-question-container :question="$question" :description="$description" :image="$question->image ? $question->image->img_path : url('img/logo.png')" :alt="$question->image ? $question->image->img_alt : 'CodeSnippetStuff Logo'"/>
                                 @endforeach
                             </div>
                         @elseif($question->count() > 0)
@@ -77,7 +77,8 @@
                                         $description = $matches[0];
                                         $description = preg_replace('/<[^>]*>/', '', $description);
                                     @endphp
-                                    <x-question-container :question="$question" :description="$description"/>
+                                    
+                                    <x-question-container :question="$question" :description="$description" :image="$question->image ? $question->image->img_path : url('img/logo.png')" :alt="$question->image ? $question->image->img_alt : 'CodeSnippetStuff Logo'"/>
                                 @endforeach
                             </div>
                         @else 
