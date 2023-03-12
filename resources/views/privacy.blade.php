@@ -10,7 +10,7 @@
                     <p class="text-lg text-gray-800">
                         <span class="font-semibold">Introduction</span>
                         <br><br>
-                        We at CodeSnippetStuff ("we," "us," "our") understand the importance of protecting your personal information. This privacy policy outlines how we collect, use, and protect your personal information when you visit our website <a href="https://codesnippetstuff.com/">CodeSnippetStuff</a>.
+                        We at CodeSnippetStuff ("we," "us," "our") understand the importance of protecting your personal information. This privacy policy outlines how we collect, use, and protect your personal information when you visit our website <a class="text-blue-500" href="https://codesnippetstuff.com/">CodeSnippetStuff</a>.
                         <br><br><br>
                         <span class="font-semibold">Information We Collect</span>
                         <br><br>
@@ -41,6 +41,10 @@
                         <span class="font-semibold">Contact Us</span>
                         <br><br>
                         If you have any questions or concerns about this privacy policy or our privacy practices, please contact us at codesnippetstuff@gmail.com.
+                        <br><br><br>
+                        <span class="font-semibold">Google Analytics Disclosure</span>
+                        <br><br>
+                        Google Analytics is enabled on this website and will collect visitation information and associate it with Google information from accounts of signed-in users who have consented to this association for the purpose of ads personalization. This Google information may include end user location, search history, YouTube history, and data from sites that partner with Google—and is used to provide aggregated and anonymized insights into users’ cross device behaviors. By browsing this site, you consent to have Google Analytics to automatically collect this additional data, which can be access and/or deleted by you at any time via the <a class="text-blue-500" href="https://myactivity.google.com/myactivity">“My Activity”</a> section of your Google account.
                     </p>
                 </div>
                 <div class="mt-6">
