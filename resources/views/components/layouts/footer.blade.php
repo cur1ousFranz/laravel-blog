@@ -31,7 +31,7 @@
         </div>
         <div class="flex justify-center space-x-3 mb-6 mt-6 lg:mb-6">
             <div>
-                <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('about') }}">
+                <a class="text-sm text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900 lg:text-base" href="{{ route('about') }}">
                     About us
                 </a>
             </div>
@@ -39,12 +39,12 @@
                     Contact us
                 </a> --}}
             <div>
-                <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('disclaimer') }}">
+                <a class="text-sm text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900 lg:text-base" href="{{ route('disclaimer') }}">
                     Disclaimer
                 </a>
             </div>
             <div>
-                <a class="text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900" href="{{ route('privacy') }}">
+                <a class="text-sm text-center uppercase font-semibold text-gray-700 hover:underline hover:text-gray-900 lg:text-base" href="{{ route('privacy') }}">
                     Privacy Policy
                 </a>
             </div>

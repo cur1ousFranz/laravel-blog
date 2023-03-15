@@ -25,6 +25,8 @@
         referrerpolicy="origin"></script>
     <link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.7.0/styles/default.min.css">
     
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
     <style>
         code {
             border-radius: 10px;
