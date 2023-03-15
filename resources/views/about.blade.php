@@ -31,6 +31,10 @@
                         data-full-width="">
                     <div overflow=""></div>
                     </amp-ad> --}}
+
+                    <amp-auto-ads type="adsense"
+                        data-ad-client="ca-pub-4812454445865215">
+                    </amp-auto-ads>
                 </div>
             </div>
             <div class="hidden w-96 lg:block">
@@ -45,6 +49,10 @@
                 data-full-width="">
                 <div overflow=""></div>
                 </amp-ad> --}}
+
+                <amp-auto-ads type="adsense"
+                    data-ad-client="ca-pub-4812454445865215">
+                </amp-auto-ads>
             </div>
         </div>
     </div>

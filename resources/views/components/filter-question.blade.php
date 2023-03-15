@@ -40,6 +40,10 @@
                         data-full-width="">
                     <div overflow=""></div>
                     </amp-ad> --}}
+
+                    <amp-auto-ads type="adsense"
+                        data-ad-client="ca-pub-4812454445865215">
+                    </amp-auto-ads>
                 </div>
              
             </div>
@@ -53,8 +57,12 @@
                     data-ad-slot="4415877212"
                     data-auto-format="rspv"
                     data-full-width="">
-                <div overflow=""></div> --}}
-                </amp-ad>
+                <div overflow=""></div>
+                </amp-ad> --}}
+
+                <amp-auto-ads type="adsense"
+                    data-ad-client="ca-pub-4812454445865215">
+                </amp-auto-ads>
             </div>
         </div>
     </div>
