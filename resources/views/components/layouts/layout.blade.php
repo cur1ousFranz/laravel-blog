@@ -44,6 +44,10 @@
             line-height: 1.75rem/* 28px */;
         }
 
+        .horizontal_ads { width: 320px; height: 100px; }
+        @media(min-width: 500px) { .horizontal_ads { width: 468px; height: 60px; } }
+        @media(min-width: 800px) { .horizontal_ads { width: 728px; height: 90px; } }
+
     </style>
 
 </head>
@@ -55,7 +59,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
         crossorigin="anonymous"></script>
     <!-- 1ST HORIZONTAL -->
-    <ins class="adsbygoogle"
+    <ins class="adsbygoogle horizontal_ads"
         style="display:block"
         data-ad-client="ca-pub-4812454445865215"
         data-ad-slot="4415877212"
