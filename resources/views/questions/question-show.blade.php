@@ -83,9 +83,9 @@
                 <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400" style="margin-top: 50px">
                     <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
                     <div class="mt-4">
-                        @if ($questions->count() >= 12)
+                        @if ($questions->count() >= 6)
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                                @foreach ($questions->random(12) as $question)
+                                @foreach ($questions->random(6) as $question)
                                     @php
                                         $description = preg_match('/^([^\.!?]*[\.!?]+){2}/', $question->body, $matches);
                                         $description = $matches[0];
