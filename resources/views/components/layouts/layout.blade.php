@@ -28,7 +28,7 @@
     {{-- <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script> --}}
 
     <script async custom-element="amp-auto-ads"
-            src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
     </script>
 
     <style>
@@ -51,6 +51,19 @@
 <body class="antialiased min-h-screen bg-gray-50">
 
     <x-layouts.nav-bar/>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
+        crossorigin="anonymous"></script>
+    <!-- 1ST HORIZONTAL -->
+    <ins class="adsbygoogle"
+        style="display:block"
+        data-ad-client="ca-pub-4812454445865215"
+        data-ad-slot="4415877212"
+        data-ad-format="auto"
+        data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
 
     <main class="max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-end">
