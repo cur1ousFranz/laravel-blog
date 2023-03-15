@@ -2,7 +2,7 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mt-2">
+                <div class="mb-4 pb-4">
                     {{-- ADS --}}
 
                     <!-- 1ST HORIZONTAL -->
@@ -68,6 +68,12 @@
                         data-ad-slot="4415877212"
                         data-ad-format="auto"
                         data-full-width-responsive="true"></ins>
+
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:300px;height:250px"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="2051817189"></ins>
+
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -76,21 +82,6 @@
             <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
 
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"

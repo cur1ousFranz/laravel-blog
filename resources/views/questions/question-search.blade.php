@@ -2,7 +2,7 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mt-2">
+                <div class="mb-4 pb-4">
                     {{-- ADS --}}
 
                     <!-- 1ST HORIZONTAL -->

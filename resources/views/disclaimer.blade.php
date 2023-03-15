@@ -2,7 +2,7 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mt-2">
+                <div class="mb-4 pb-4">
                     {{-- ADS --}}
 
                     <!-- 1ST HORIZONTAL -->
@@ -51,25 +51,9 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1525488989">
                 </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
-
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <x-layouts.layout>
     <div class="px-4 mt-8">
         <div class="w-full flex">
-            <div class="mt-2">
+            <div class="mb-4 pb-4">
                 {{-- ADS --}}
 
                 <!-- 1ST HORIZONTAL -->
