@@ -1,19 +1,5 @@
 <x-layouts.layout>
     <div class="px-4 mt-8">
-        <div class="mb-4 pb-4">
-            {{-- ADS --}}
-
-            <!-- 1ST HORIZONTAL -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-        </div>
         <div class="w-full flex">
 
             <div class="hidden relative w-96 md:block">
@@ -24,20 +10,7 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1525488989">
                 </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
+
                 </ins>
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -105,25 +78,15 @@
                  {{-- ADS --}}
 
                  <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
+                 style="display:inline-block;width:300px;height:250px"
+                 data-ad-client="ca-pub-4812454445865215"
+                 data-ad-slot="2051817189"></ins>
+
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
+                    data-ad-slot="1525488989"></ins>
+                   
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>

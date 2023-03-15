@@ -116,16 +116,14 @@
                 {{-- ADS --}}
 
                 <ins class="adsbygoogle"
-                    style="display:block"
+                    style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
+                    data-ad-slot="2051817189"></ins>
 
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="2051817189"></ins>
+                    data-ad-slot="1525488989"></ins>
 
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});

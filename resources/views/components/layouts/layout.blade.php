@@ -43,22 +43,10 @@
             font-size: 1.125rem/* 18px */;
             line-height: 1.75rem/* 28px */;
         }
-/* 
-        .horizontal_ads { 
-            width: 320px; 
-            height: 100px; 
-        }
 
-        @media(min-width: 500px) { 
-            .horizontal_ads { 
-                width: 468px; height: 60px; 
-            } 
+        ins.adsbygoogle[data-ad-status="unfilled"] {
+            display: none !important;
         }
-        @media(min-width: 800px) { 
-            .horizontal_ads { 
-                width: 728px; height: 90px; 
-            } 
-        } */
 
     </style>
 
