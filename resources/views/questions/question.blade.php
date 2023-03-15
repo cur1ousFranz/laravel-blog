@@ -1,20 +1,20 @@
 <x-layouts.layout>
     <div class="px-4 mt-8">
-        <div class="w-full flex">
-            <div class="mb-4 pb-4">
-                {{-- ADS --}}
+        <div class="mb-4 pb-4">
+            {{-- ADS --}}
 
-                <!-- 1ST HORIZONTAL -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+            <!-- 1ST HORIZONTAL -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="w-full flex">
 
             <div class="hidden relative w-96 md:block">
                 {{-- ADS --}}

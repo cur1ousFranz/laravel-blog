@@ -2,22 +2,22 @@
 
 <x-layouts.layout title="Category - {{ ucwords($title) }}">
     <div class="mt-8">
+        <div class="mb-4 pb-4">
+            {{-- ADS --}}
+
+            <!-- 1ST HORIZONTAL -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4 pb-4">
-                    {{-- ADS --}}
-
-                    <!-- 1ST HORIZONTAL -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-4812454445865215"
-                        data-ad-slot="4415877212"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
                 {{ $header }}
                 @if ($questions->count())
                     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">

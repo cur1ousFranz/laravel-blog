@@ -1,21 +1,21 @@
 <x-layouts.layout title="Privacy Policy">
     <div class="px-4 mt-8">
+        <div class="mb-4 pb-4">
+            {{-- ADS --}}
+
+            <!-- 1ST HORIZONTAL -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4 pb-4">
-                    {{-- ADS --}}
-
-                    <!-- 1ST HORIZONTAL -->
-                    <ins class="adsbygoogle"
-                        style="display:block"
-                        data-ad-client="ca-pub-4812454445865215"
-                        data-ad-slot="4415877212"
-                        data-ad-format="auto"
-                        data-full-width-responsive="true"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-                </div>
                 <div>
                     <h1 class="uppercase text-2xl font-bold mb-6 text-gray-800">Privacy Policy</h1>
                     <p class="text-lg text-gray-800">

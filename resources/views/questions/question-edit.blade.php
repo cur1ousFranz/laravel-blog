@@ -1,20 +1,20 @@
 <x-layouts.layout title="{{ $question->title }}">
     <div class="px-4 mt-8">
-        <div class="w-full flex">
-            <div class="mb-4 pb-4">
-                {{-- ADS --}}
+        <div class="mb-4 pb-4">
+            {{-- ADS --}}
 
-                <!-- 1ST HORIZONTAL -->
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-            </div>
+            <!-- 1ST HORIZONTAL -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+        <div class="w-full flex">
 
             <div class="w-full p-4 shadow-sm">
                 <h1 class="text-2xl font-bold mb-2 text-gray-800">Edit Post</h1>
