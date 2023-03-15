@@ -31,7 +31,7 @@
                 <div class="mt-6 pb-4">
                     {{-- ADS --}}
 
-                    {{-- VERTICAL --}}
+                    {{-- VERTICAL
                     <amp-ad width="100vw" height="320"
                         type="adsense"
                         data-ad-client="ca-pub-4812454445865215"
@@ -39,7 +39,7 @@
                         data-auto-format="rspv"
                         data-full-width="">
                     <div overflow=""></div>
-                    </amp-ad>
+                    </amp-ad> --}}
                 </div>
              
             </div>
@@ -47,13 +47,13 @@
                  {{-- ADS --}}
 
                  {{-- HORIZONTAL --}}
-                 <amp-ad width="100vw" height="320"
+                 {{-- <amp-ad width="100vw" height="320"
                     type="adsense"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="4415877212"
                     data-auto-format="rspv"
                     data-full-width="">
-                <div overflow=""></div>
+                <div overflow=""></div> --}}
                 </amp-ad>
             </div>
         </div>
