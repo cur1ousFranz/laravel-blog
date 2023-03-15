@@ -1,8 +1,34 @@
 <x-layouts.layout>
     <div class="px-4 mt-8">
         <div class="w-full flex">
+            <div class="mt-2">
+                {{-- ADS --}}
+
+                <!-- 1ST HORIZONTAL -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="4415877212"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+
             <div class="hidden relative w-96 md:block">
                 {{-- ADS --}}
+                
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
             <div class="w-full p-4 shadow-xl">
                 <h1 class="text-2xl font-bold mb-2 text-gray-800">Create Question</h1>
@@ -64,6 +90,17 @@
             </div>
             <div class="hidden relative w-96 md:block">
                  {{-- ADS --}}
+
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </div>

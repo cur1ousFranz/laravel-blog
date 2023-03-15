@@ -2,8 +2,19 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4">
+                <div class="mt-2">
                     {{-- ADS --}}
+
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="4415877212"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
                 
                 <form action="{{ route('question-search') }}" class="w-full flex justify-center" method="POST">
@@ -35,6 +46,17 @@
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
                 {{-- ADS --}}
+
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
            </div>
         </div>
     </div>

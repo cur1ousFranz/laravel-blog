@@ -43,10 +43,22 @@
             font-size: 1.125rem/* 18px */;
             line-height: 1.75rem/* 28px */;
         }
+/* 
+        .horizontal_ads { 
+            width: 320px; 
+            height: 100px; 
+        }
 
-        .horizontal_ads { width: 320px; height: 100px; }
-        @media(min-width: 500px) { .horizontal_ads { width: 468px; height: 60px; } }
-        @media(min-width: 800px) { .horizontal_ads { width: 728px; height: 90px; } }
+        @media(min-width: 500px) { 
+            .horizontal_ads { 
+                width: 468px; height: 60px; 
+            } 
+        }
+        @media(min-width: 800px) { 
+            .horizontal_ads { 
+                width: 728px; height: 90px; 
+            } 
+        } */
 
     </style>
 
@@ -55,19 +67,6 @@
 <body class="antialiased min-h-screen bg-gray-50">
 
     <x-layouts.nav-bar/>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
-        crossorigin="anonymous"></script>
-    <!-- 1ST HORIZONTAL -->
-    <ins class="adsbygoogle horizontal_ads"
-        style="display:block"
-        data-ad-client="ca-pub-4812454445865215"
-        data-ad-slot="4415877212"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
 
     <main class="max-w-screen-xl mx-auto mb-12">
         <div class="flex justify-end">

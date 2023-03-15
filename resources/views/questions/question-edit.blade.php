@@ -1,8 +1,19 @@
 <x-layouts.layout title="{{ $question->title }}">
     <div class="px-4 mt-8">
         <div class="w-full flex">
-            <div class="hidden w-96 lg:block">
+            <div class="mt-2">
                 {{-- ADS --}}
+
+                <!-- 1ST HORIZONTAL -->
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="4415877212"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
 
             <div class="w-full p-4 shadow-sm">
@@ -93,7 +104,18 @@
             </div>
 
             <div class="hidden w-96 lg:block">
-                 {{-- ADS --}}
+                {{-- ADS --}}
+
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </div>

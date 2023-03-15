@@ -2,8 +2,19 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4">
+                <div class="mt-2">
                     {{-- ADS --}}
+
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="4415877212"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
                 <div>
                     <h1 class="uppercase text-2xl font-bold mb-6 text-gray-800">Privacy Policy</h1>
@@ -47,40 +58,34 @@
                         Google Analytics is enabled on this website and will collect visitation information and associate it with Google information from accounts of signed-in users who have consented to this association for the purpose of ads personalization. This Google information may include end user location, search history, YouTube history, and data from sites that partner with Google—and is used to provide aggregated and anonymized insights into users’ cross device behaviors. By browsing this site, you consent to have Google Analytics to automatically collect this additional data, which can be access and/or deleted by you at any time via the <a class="text-blue-500" href="https://myactivity.google.com/myactivity" target="_blank">“My Activity”</a> section of your Google account.
                     </p>
                 </div>
-                <div class="mt-6">
+                <div class="mt-2">
                     {{-- ADS --}}
 
-                    {{-- HORIZONTAL --}}
-                    {{-- <amp-ad width="100vw" height="320"
-                    type="adsense"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"
-                    data-auto-format="rspv"
-                    data-full-width="">
-                    <div overflow=""></div>
-                    </amp-ad> --}}
-
-                    <amp-auto-ads type="adsense"
-                        data-ad-client="ca-pub-4812454445865215">
-                    </amp-auto-ads>
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="4415877212"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </div>
             <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
-                
-                {{-- VERTICAL --}}
-                {{-- <amp-ad width="100vw" height="320"
-                type="adsense"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"
-                data-auto-format="rspv"
-                data-full-width="">
-                <div overflow=""></div>
-                </amp-ad> --}}
 
-                <amp-auto-ads type="adsense"
-                    data-ad-client="ca-pub-4812454445865215">
-                </amp-auto-ads>
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </div>

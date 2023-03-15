@@ -2,8 +2,19 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4">
+                <div class="mt-2">
                     {{-- ADS --}}
+
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="4415877212"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
                 <div>
                     <h1 class="uppercase text-2xl font-bold mb-6 text-gray-800">About Us</h1>
@@ -19,40 +30,35 @@
                         Whether you are a beginner or an experienced programmer, Coding Snippet Stuff has something to offer. We are committed to providing the best coding problem solutions and resources to help you achieve your programming goals. Thank you for visiting our website, and we hope you find our solutions and resources helpful in your coding journey!
                     </p>
                 </div>
-                <div class="mt-6">
+                <div class="mt-2">
                     {{-- ADS --}}
 
-                    {{-- HORIZONTAL --}}
-                    {{-- <amp-ad width="100vw" height="320"
-                        type="adsense"
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
                         data-ad-client="ca-pub-4812454445865215"
                         data-ad-slot="4415877212"
-                        data-auto-format="rspv"
-                        data-full-width="">
-                    <div overflow=""></div>
-                    </amp-ad> --}}
-
-                    <amp-auto-ads type="adsense"
-                        data-ad-client="ca-pub-4812454445865215">
-                    </amp-auto-ads>
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </div>
             <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
-                
-                {{-- VERTICAL --}}
-                {{-- <amp-ad width="100vw" height="320"
-                type="adsense"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"
-                data-auto-format="rspv"
-                data-full-width="">
-                <div overflow=""></div>
-                </amp-ad> --}}
 
-                <amp-auto-ads type="adsense"
-                    data-ad-client="ca-pub-4812454445865215">
-                </amp-auto-ads>
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
             </div>
         </div>
     </div>

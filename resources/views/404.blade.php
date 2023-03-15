@@ -2,9 +2,21 @@
     <div class="px-4 mt-8">
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
-                <div class="mb-4">
+                <div class="mt-2">
                     {{-- ADS --}}
+
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="4415877212"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
+
                 <button onclick="history.back()" class="font-semibold uppercase">
                     <span class="inline-block font-bold">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-left" viewBox="0 0 16 16">
@@ -17,39 +29,35 @@
                         <img class="w-96" src="{{ asset('img/404.svg') }}" alt="">
                     </span>
                 </div>
-                <div class="mt-6">
+                <div class="mt-2">
                     {{-- ADS --}}
-                    
-                    {{-- HORIZONTAL --}}
-                    {{-- <amp-ad width="100vw" height="320"
-                        type="adsense"
+
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
                         data-ad-client="ca-pub-4812454445865215"
                         data-ad-slot="4415877212"
-                        data-auto-format="rspv"
-                        data-full-width="">
-                    <div overflow=""></div>
-                    </amp-ad> --}}
-                    <amp-auto-ads type="adsense"
-                        data-ad-client="ca-pub-4812454445865215">
-                    </amp-auto-ads>
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
             </div>
             <div class="hidden w-96 lg:block">
                  {{-- ADS --}}
 
-                 {{-- VERTICAL --}}
-                 {{-- <amp-ad width="100vw" height="320"
-                 type="adsense"
-                 data-ad-client="ca-pub-4812454445865215"
-                 data-ad-slot="4415877212"
-                 data-auto-format="rspv"
-                 data-full-width="">
-                 <div overflow=""></div>
-                 </amp-ad> --}}
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 
-                 <amp-auto-ads type="adsense"
-                    data-ad-client="ca-pub-4812454445865215">
-                </amp-auto-ads>
             </div>
         </div>
     </div>

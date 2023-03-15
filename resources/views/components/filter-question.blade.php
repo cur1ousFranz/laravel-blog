@@ -6,6 +6,17 @@
             <div class="p-6 w-full" style="max-width: 60rem;">
                 <div class="mb-4 pb-4">
                     {{-- ADS --}}
+
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="4415877212"
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
                 {{ $header }}
                 @if ($questions->count())
@@ -28,42 +39,37 @@
                     </h1>
                 @endif
 
-                <div class="mt-6 pb-4">
+                <div class="mt-2">
                     {{-- ADS --}}
 
-                    {{-- VERTICAL
-                    <amp-ad width="100vw" height="320"
-                        type="adsense"
+                    <!-- 1ST HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:block"
                         data-ad-client="ca-pub-4812454445865215"
                         data-ad-slot="4415877212"
-                        data-auto-format="rspv"
-                        data-full-width="">
-                    <div overflow=""></div>
-                    </amp-ad> --}}
-
-                    <amp-auto-ads type="adsense"
-                        data-ad-client="ca-pub-4812454445865215">
-                    </amp-auto-ads>
+                        data-ad-format="auto"
+                        data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
                 </div>
              
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
-                 {{-- ADS --}}
-
-                 {{-- HORIZONTAL --}}
-                 {{-- <amp-ad width="100vw" height="320"
-                    type="adsense"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"
-                    data-auto-format="rspv"
-                    data-full-width="">
-                <div overflow=""></div>
-                </amp-ad> --}}
-
-                <amp-auto-ads type="adsense"
-                    data-ad-client="ca-pub-4812454445865215">
-                </amp-auto-ads>
+                 {{-- ADS --}}                                    
+              
+                <!-- 1ST VERTICAL -->
+                <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="1905263941"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </div>
+
 </x-layouts.layout>
