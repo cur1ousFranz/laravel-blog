@@ -1,15 +1,24 @@
 <x-layouts.layout>
     <div class="px-4 mt-8">
-        <div class="w-full flex">
+        <div class="w-full flex space-x-2">
 
             <div class="hidden relative w-96 md:block">
                 {{-- ADS --}}
-                
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="2051817189"></ins>
+
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1525488989">
                 </ins>
+
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="1278911129"></ins>
 
                 </ins>
                 <script>
@@ -85,7 +94,13 @@
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989"></ins>
+                    data-ad-slot="1525488989">
+                </ins>
+
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="1278911129"></ins>
                    
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});

@@ -111,19 +111,38 @@
                         @endif
                     </div>
                 </div>
+
+                {{-- Multiplex ads --}}
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4812454445865215"
+                    crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-format="autorelaxed"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="9157401149"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
                 {{-- ADS --}}
 
                 <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="2051817189"></ins>
+                style="display:inline-block;width:300px;height:250px"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="2051817189"></ins>
 
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989"></ins>
+               <ins class="adsbygoogle"
+                   style="display:inline-block;width:300px;height:250px"
+                   data-ad-client="ca-pub-4812454445865215"
+                   data-ad-slot="1525488989">
+               </ins>
+
+               <ins class="adsbygoogle"
+                   style="display:inline-block;width:300px;height:250px"
+                   data-ad-client="ca-pub-4812454445865215"
+                   data-ad-slot="1278911129"></ins>
 
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});

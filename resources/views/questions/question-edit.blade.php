@@ -114,8 +114,13 @@
                <ins class="adsbygoogle"
                    style="display:inline-block;width:300px;height:250px"
                    data-ad-client="ca-pub-4812454445865215"
-                   data-ad-slot="1525488989"></ins>
-                  
+                   data-ad-slot="1525488989">
+               </ins>
+
+               <ins class="adsbygoogle"
+                   style="display:inline-block;width:300px;height:250px"
+                   data-ad-client="ca-pub-4812454445865215"
+                   data-ad-slot="1278911129"></ins>
 
                 <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
