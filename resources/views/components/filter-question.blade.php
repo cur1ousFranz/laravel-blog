@@ -55,7 +55,7 @@
                 </div>
              
             </div>
-            <div class="hidden w-80 lg:block" >
+            <div class="hidden w-96 lg:block" >
                  {{-- ADS --}}                                    
 
                  <ins class="adsbygoogle"

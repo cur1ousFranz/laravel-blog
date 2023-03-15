@@ -1,5 +1,5 @@
 <x-layouts.layout>
-    <div class="px-12 mt-8 flex justify-center">
+    <div class="px-12 mt-8 flex flex-col justify-center">
         <div class="mt-2">
             {{-- ADS --}}
 
@@ -14,7 +14,7 @@
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
         </div>
-        
+
         <div class="w-3/2">
             <form action="{{ route('authenticate') }}" method="POST" 
             class="px-12 py-6 justify-self-center w-full shadow-lg relative">
@@ -40,6 +40,21 @@
                     Sign in
                 </button>
             </form>
+        </div>
+
+        <div class="mt-2">
+            {{-- ADS --}}
+
+            <!-- 1ST HORIZONTAL -->
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
     </div>
 

@@ -46,7 +46,7 @@
                 <img class="rounded-lg shadow-2xl mt-6 rotate-2" src="{{ asset('img/code-hero.jpg') }}" alt="code_image">
             </div>
         </div>
-        <div class="mt-2">
+        <div class="mt-6">
             {{-- ADS --}}
 
             <!-- 1ST HORIZONTAL -->
@@ -65,7 +65,7 @@
             <x-category.categories/>
         </section>
 
-        <div class="mt-2">
+        <div class="mt-6">
             {{-- ADS --}}
 
             <!-- 1ST HORIZONTAL -->

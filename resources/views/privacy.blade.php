@@ -69,11 +69,6 @@
                         data-ad-format="auto"
                         data-full-width-responsive="true"></ins>
 
-                    <ins class="adsbygoogle"
-                        style="display:inline-block;width:300px;height:250px"
-                        data-ad-client="ca-pub-4812454445865215"
-                        data-ad-slot="2051817189"></ins>
-
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
