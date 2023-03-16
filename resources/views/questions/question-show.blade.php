@@ -63,52 +63,27 @@
                         </div>
                     </section>
                 </div>
-                <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400" style="margin-top: 50px">
-                    <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related</h1>
-                    <div class="mt-4">
-                        @if ($questions->count() >= 6)
-                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                                @foreach ($questions->random(6) as $question)
-                                    @php
-                                        $description = preg_match('/^([^\.!?]*[\.!?]+){2}/', $question->body, $matches);
-                                        $description = $matches[0];
-                                        $description = preg_replace('/<[^>]*>/', '', $description);
-                                    @endphp
-                                    <x-question-container :question="$question" :description="$description" :image="$question->image ? $question->image->img_path : url('img/logo.png')" :alt="$question->image ? $question->image->img_alt : 'CodeSnippetStuff Logo'"/>
-                                @endforeach
-                            </div>
-                        @elseif($question->count() > 0)
-                            <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
-                                @foreach ($questions as $question)
-                                    @php
-                                        $description = preg_match('/^([^\.!?]*[\.!?]+){2}/', $question->body, $matches);
-                                        $description = $matches[0];
-                                        $description = preg_replace('/<[^>]*>/', '', $description);
-                                    @endphp
-                                    
-                                    <x-question-container :question="$question" :description="$description" :image="$question->image ? $question->image->img_path : url('img/logo.png')" :alt="$question->image ? $question->image->img_alt : 'CodeSnippetStuff Logo'"/>
-                                @endforeach
-                            </div>
-                        @else 
-                            <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Nothing to show.</h4>
-                        @endif
-                    </div>
+
+                <div class="mb-4 pb-4">
+                    {{-- ADS --}}
+            
+                    <!-- HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="3496243870"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
                 </div>
 
-                {{-- Multiplex ads --}}
-                <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-format="autorelaxed"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="9157401149"></ins>
             </div>
             <div class="hidden w-80 py-6 lg:block" style="min-width: 300px;">
 
                 <div class="p-4 rounded-md shadow-sm border border-t-2 border-t-gray-400">
                     <h1 class="text-lg mb-3 font-bold text-gray-800 md:text-xl">Related</h1>
-                    @if ($questions->count() >= 7)
+                    @if ($questions->count() >= 8)
                         <ul>
-                            @foreach ($questions->random(7) as $question)
+                            @foreach ($questions->random(8) as $question)
                                 <li class="truncate text-sm border-b border-gray-200 p-2 max-w-full hover:bg-gray-200" >
                                     <span class="inline-block">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
@@ -150,17 +125,6 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1278911129"></ins>
             </div>
-        </div>
-        <div class="mt-2">
-            {{-- ADS --}}
-
-            <!-- HORIZONTAL -->
-            <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4812454445865215"
-            data-ad-slot="3496243870"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
         </div>
     </div>
 </x-layouts.layout>
