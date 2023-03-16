@@ -3,13 +3,11 @@
         <div class="mb-4 pb-4">
             {{-- ADS --}}
 
-            <!-- 1ST HORIZONTAL -->
+            <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-                style="display:block"
+                style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
+                data-ad-slot="3496243870"></ins>
             <script>
                 (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
@@ -43,6 +41,18 @@
                     @endif
                 </div>
 
+                <div class="mt-2 mb-4">
+                    {{-- ADS --}}
+        
+                    <!-- HORIZONTAL -->
+                    <ins class="adsbygoogle"
+                        style="display:inline-block;width:728px;height:90px"
+                        data-ad-client="ca-pub-4812454445865215"
+                        data-ad-slot="3496243870"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
                 {{-- ADS --}}
