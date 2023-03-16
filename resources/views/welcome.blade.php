@@ -39,7 +39,7 @@
                     @endif
                 </div>
             </div>
-            <div class="hidden lg:w-6/12 lg:flex lg:justify-end">
+            <div class="hidden h-fit lg:w-6/12 lg:flex lg:justify-end">
                 <img class="rounded-lg shadow-2xl mt-6 rotate-2" src="{{ asset('img/code-hero.jpg') }}" alt="code_image">
             </div>
         </div>
