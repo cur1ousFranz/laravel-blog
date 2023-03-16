@@ -64,7 +64,7 @@
                     </section>
                 </div>
                 <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400" style="margin-top: 50px">
-                    <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
+                    <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related</h1>
                     <div class="mt-4">
                         @if ($questions->count() >= 6)
                             <div class="grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -102,23 +102,36 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="9157401149"></ins>
             </div>
-            <div class="hidden w-80 lg:block" style="min-width: 300px;">
-                {{-- ADS --}}
-                
-                {{-- SKYSCRAPER --}}
-                <ins class="adsbygoogle"
-                style="display:inline-block;width:160px;height:600px"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"></ins>
+            <div class="hidden w-80 py-6 lg:block" style="min-width: 300px;">
 
-                {{-- customized sized medium (1st) --}}
+                <div class="p-4 rounded-md shadow-sm border border-t-2 border-t-gray-400">
+                    <h1 class="text-lg mb-3 font-bold text-gray-800 md:text-xl">Related</h1>
+                    @if ($questions)
+                        <ul>
+                            @foreach ($questions->random(5) as $question)
+                                <li class="truncate text-sm border-b border-gray-200 p-2 max-w-full hover:bg-gray-200" >
+                                    <span class="inline-block">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z"/>
+                                        </svg>
+                                    </span>
+                                    <a href="{{ route('question-show', [$question->slug]) }}" class=" text-blue-500 w-full font-semibold">{{ $question->title }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    @else
+                        <h4 class="text-lg mt-4 text-center font-bold text-gray-500">Not available</h4>
+                    @endif
+                </div>
+
+                {{-- ADS --}}
+
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1525488989">
                 </ins>
 
-                {{-- 3rd customized --}}
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"

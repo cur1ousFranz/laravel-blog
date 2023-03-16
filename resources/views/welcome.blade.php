@@ -19,7 +19,6 @@
 
         <div class="flex space-x-12 justify-between mt-6">
             <div class="space-y-6 w-full lg:w-6/12">
-                {{-- <h1 class="text-xl font-bold text-center text-gray-900 lg:text-4xl">Need help for something?</h1> --}}
                 <div class="p-4 rounded-md shadow-lg">
                     @if ($questions)
                         <ul>
