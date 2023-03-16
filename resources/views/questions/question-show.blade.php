@@ -63,17 +63,6 @@
                         </div>
                     </section>
                 </div>
-                <div class="mt-2">
-                    {{-- ADS --}}
-
-                    <!-- HORIZONTAL -->
-                    <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="3496243870"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                </div>
                 <div class="p-6 shadow-sm border rounded-md border-t-2 border-t-gray-400" style="margin-top: 50px">
                     <h1 class="text-xl font-bold text-gray-800 md:text-3xl">Related problems</h1>
                     <div class="mt-4">
@@ -147,6 +136,17 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="6639899077"></ins>
             </div>
+        </div>
+        <div class="mt-2">
+            {{-- ADS --}}
+
+            <!-- HORIZONTAL -->
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4812454445865215"
+            data-ad-slot="3496243870"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </div>
     </div>
 </x-layouts.layout>

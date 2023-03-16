@@ -25,17 +25,6 @@
                         Every effort is made to keep the website up and running smoothly. However, we take no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.
                     </p>
                 </div>
-                <div class="mt-2">
-                    {{-- ADS --}}
-
-                    <!-- HORIZONTAL -->
-                    <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="3496243870"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                </div>
             </div>
             <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
@@ -71,6 +60,17 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="6639899077"></ins>
             </div>
+        </div>
+        <div class="mt-2">
+            {{-- ADS --}}
+
+            <!-- HORIZONTAL -->
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4812454445865215"
+            data-ad-slot="3496243870"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </div>
     </div>
 </x-layouts.layout>

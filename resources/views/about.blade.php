@@ -27,17 +27,6 @@
                         Whether you are a beginner or an experienced programmer, Coding Snippet Stuff has something to offer. We are committed to providing the best coding problem solutions and resources to help you achieve your programming goals. Thank you for visiting our website, and we hope you find our solutions and resources helpful in your coding journey!
                     </p>
                 </div>
-                <div class="mt-2">
-                    {{-- ADS --}}
-
-                    <!-- HORIZONTAL -->
-                    <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="3496243870"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                </div>
             </div>
             <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
@@ -73,6 +62,17 @@
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="6639899077"></ins>
             </div>
+        </div>
+        <div class="mt-2">
+            {{-- ADS --}}
+
+            <!-- HORIZONTAL -->
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4812454445865215"
+            data-ad-slot="3496243870"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </div>
     </div>
 </x-layouts.layout>

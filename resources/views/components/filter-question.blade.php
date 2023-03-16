@@ -35,18 +35,6 @@
                         No questions to show in this category.
                     </h1>
                 @endif
-
-                <div class="mt-2">
-                    {{-- ADS --}}
-
-                    <!-- HORIZONTAL -->
-                    <ins class="adsbygoogle"
-                    style="display:block"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="3496243870"
-                    data-ad-format="auto"
-                    data-full-width-responsive="true"></ins>
-                </div>
              
             </div>
             <div class="hidden w-96 lg:block" >
@@ -57,7 +45,7 @@
                     style="display:inline-block;width:160px;height:600px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="4415877212"></ins>
-                    
+
                 <!-- 2nd customized -->
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
@@ -84,6 +72,17 @@
                     data-ad-slot="6639899077"></ins>
                     
             </div>
+        </div>
+        <div class="mt-2">
+            {{-- ADS --}}
+
+            <!-- HORIZONTAL -->
+            <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4812454445865215"
+            data-ad-slot="3496243870"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </div>
     </div>
 
