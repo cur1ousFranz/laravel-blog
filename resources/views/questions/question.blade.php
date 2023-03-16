@@ -10,31 +10,19 @@
                 style="display:inline-block;width:160px;height:600px"
                 data-ad-client="ca-pub-4812454445865215"
                 data-ad-slot="4415877212"></ins>
-               
-                <!-- 2nd customized -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="2051817189"></ins>
-                    
+
                 {{-- customized sized medium (1st) --}}
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989"></ins>
-                
+                    data-ad-slot="1525488989">
+                </ins>
+
                 {{-- 3rd customized --}}
                 <ins class="adsbygoogle"
-                style="display:inline-block;width:300px;height:250px"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="1278911129"></ins>
-                
-                {{-- 4th customized --}}
-                <ins class="adsbygoogle"
-                style="display:inline-block;width:300px;height:250px"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="6639899077"></ins>
-
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="1278911129"></ins>
             </div>
             <div class="w-full p-4 shadow-xl h-fit">
                 <h1 class="text-2xl font-bold mb-2 text-gray-800">Create Question</h1>
@@ -99,15 +87,9 @@
 
                 {{-- SKYSCRAPER --}}
                 <ins class="adsbygoogle"
-                    style="display:inline-block;width:160px;height:600px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"></ins>
-
-                <!-- 2nd customized -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="2051817189"></ins>
+                style="display:inline-block;width:160px;height:600px"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"></ins>
 
                 {{-- customized sized medium (1st) --}}
                 <ins class="adsbygoogle"
@@ -121,12 +103,6 @@
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1278911129"></ins>
-
-                {{-- 4th customized --}}
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="6639899077"></ins>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@
                     <p class="text-lg text-gray-800">
                         <span class="font-semibold">Introduction</span>
                         <br><br>
-                        We at CodeSnippetStuff ("we," "us," "our") understand the importance of protecting your personal information. This privacy policy outlines how we collect, use, and protect your personal information when you visit our website <a class="text-blue-500" href="https://codesnippetstuff.com/" target="_blank">CodeSnippetStuff</a>.
+                        We at CodeSnippetStuff ("we," "us," "our") understand the importance of protecting your personal information. This privacy policy outlines how we collect, use, and protect your personal information when you visit our website <a class="text-blue-500" href="https://codesnippetstuff.com/">CodeSnippetStuff</a>.
                         <br><br><br>
                         <span class="font-semibold">Information We Collect</span>
                         <br><br>
@@ -52,7 +52,7 @@
                         <br><br><br>
                         <span class="font-semibold">Google Analytics Disclosure</span>
                         <br><br>
-                        Google Analytics is enabled on this website and will collect visitation information and associate it with Google information from accounts of signed-in users who have consented to this association for the purpose of ads personalization. This Google information may include end user location, search history, YouTube history, and data from sites that partner with Google—and is used to provide aggregated and anonymized insights into users’ cross device behaviors. By browsing this site, you consent to have Google Analytics to automatically collect this additional data, which can be access and/or deleted by you at any time via the <a class="text-blue-500" href="https://myactivity.google.com/myactivity" target="_blank">“My Activity”</a> section of your Google account.
+                        Google Analytics is enabled on this website and will collect visitation information and associate it with Google information from accounts of signed-in users who have consented to this association for the purpose of ads personalization. This Google information may include end user location, search history, YouTube history, and data from sites that partner with Google—and is used to provide aggregated and anonymized insights into users’ cross device behaviors. By browsing this site, you consent to have Google Analytics to automatically collect this additional data, which can be access and/or deleted by you at any time via the <a class="text-blue-500" href="https://myactivity.google.com/myactivity">“My Activity”</a> section of your Google account.
                     </p>
                 </div>
             </div>
@@ -61,15 +61,9 @@
 
                 {{-- SKYSCRAPER --}}
                 <ins class="adsbygoogle"
-                    style="display:inline-block;width:160px;height:600px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"></ins>
-
-                <!-- 2nd customized -->
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="2051817189"></ins>
+                style="display:inline-block;width:160px;height:600px"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"></ins>
 
                 {{-- customized sized medium (1st) --}}
                 <ins class="adsbygoogle"
@@ -83,12 +77,6 @@
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="1278911129"></ins>
-
-                {{-- 4th customized --}}
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:300px;height:250px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="6639899077"></ins>
             </div>
         </div>
         <div class="mt-2">

@@ -1,6 +1,6 @@
 @props(['question', 'description', 'image' => false, 'alt' => false])
 
-<a href="{{ route('question-show', [$question->slug]) }}" target="_blank" class="relative border shadow-sm space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
+<a href="{{ route('question-show', [$question->slug]) }}" class="relative border shadow-sm space-y-1 rounded-lg hover:shadow-lg border-gray-400 hover:border-gray-800">
     @if ($image)
         <img src="{{ $image }}" alt="{{ $alt }}" style="border-top-left-radius: 0.375rem; border-top-right-radius: 0.375rem">
     @endif
