@@ -12,7 +12,7 @@
                 data-ad-slot="3496243870"></ins>
         </div>
         <div class="w-full flex lg:space-x-1">
-            <div class="p-6 w-full" style="max-width: 60rem;">
+            <div class="p-6 w-full h-fit" style="max-width: 60rem;">
                 {{ $header }}
                 @if ($questions->count())
                     <div class="grid grid-cols-2 lg:grid-cols-3 gap-2">
