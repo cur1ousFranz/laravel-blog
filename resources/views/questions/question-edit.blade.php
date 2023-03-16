@@ -111,21 +111,37 @@
             <div class="hidden w-96 lg:block">
                 {{-- ADS --}}
 
+                <!-- 2nd customized -->
                 <ins class="adsbygoogle"
-                style="display:inline-block;width:300px;height:250px"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="2051817189"></ins>
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="2051817189"></ins>
 
-               <ins class="adsbygoogle"
-                   style="display:inline-block;width:300px;height:250px"
-                   data-ad-client="ca-pub-4812454445865215"
-                   data-ad-slot="1525488989">
-               </ins>
+                {{-- customized sized medium (1st) --}}
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="1525488989">
+                </ins>
 
-               <ins class="adsbygoogle"
-                   style="display:inline-block;width:300px;height:250px"
-                   data-ad-client="ca-pub-4812454445865215"
-                   data-ad-slot="1278911129"></ins>
+                {{-- 3rd customized --}}
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="1278911129"></ins>
+
+                {{-- 4th customized --}}
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:300px;height:250px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="6639899077"></ins>
+
+                    
+                {{-- SKYSCRAPER --}}
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:160px;height:600px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="4415877212"></ins>
             </div>
         </div>
     </div>
