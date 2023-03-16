@@ -8,9 +8,6 @@
                 style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-4812454445865215"
                 data-ad-slot="3496243870"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
         <div class="w-full flex">
 
@@ -108,9 +105,6 @@
                         style="display:inline-block;width:728px;height:90px"
                         data-ad-client="ca-pub-4812454445865215"
                         data-ad-slot="3496243870"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                 </div>
             </div>
 
@@ -132,10 +126,6 @@
                    style="display:inline-block;width:300px;height:250px"
                    data-ad-client="ca-pub-4812454445865215"
                    data-ad-slot="1278911129"></ins>
-
-                <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
             </div>
         </div>
     </div>

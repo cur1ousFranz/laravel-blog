@@ -37,9 +37,6 @@
                     data-ad-slot="6639899077"></ins>
 
                 </ins>
-                <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
             </div>
             <div class="w-full p-4 shadow-xl">
                 <h1 class="text-2xl font-bold mb-2 text-gray-800">Create Question</h1>
@@ -132,10 +129,6 @@
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="6639899077"></ins>
-                   
-                <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
             </div>
         </div>
     </div>

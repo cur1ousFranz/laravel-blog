@@ -10,9 +10,6 @@
                 data-ad-slot="4415877212"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
 
         <form action="{{ route('question-search') }}" class="mt-12 w-full flex justify-start" method="POST">
@@ -49,16 +46,11 @@
         <div class="mt-6">
             {{-- ADS --}}
 
-            <!-- 1ST HORIZONTAL -->
+            <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-                style="display:block"
+                style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+                data-ad-slot="3496243870"></ins>
         </div>
 
         <section class="categories mt-4">
@@ -68,18 +60,12 @@
         <div class="mt-6">
             {{-- ADS --}}
 
-            <!-- 1ST HORIZONTAL -->
+            <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-                style="display:block"
+                style="display:inline-block;width:728px;height:90px"
                 data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="4415877212"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
+                data-ad-slot="3496243870"></ins>
         </div>
-
         
     </div>
     
