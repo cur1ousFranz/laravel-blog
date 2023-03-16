@@ -5,6 +5,12 @@
             <div class="hidden relative w-96 md:block">
                 {{-- ADS --}}
 
+                {{-- SKYSCRAPER --}}
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:160px;height:600px"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"></ins>
+
                 <!-- 2nd customized -->
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
@@ -95,6 +101,12 @@
             </div>
             <div class="hidden relative w-96 md:block">
                  {{-- ADS --}}
+
+                {{-- SKYSCRAPER --}}
+                <ins class="adsbygoogle"
+                style="display:inline-block;width:160px;height:600px"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="4415877212"></ins>
 
                 <!-- 2nd customized -->
                 <ins class="adsbygoogle"
