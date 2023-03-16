@@ -5,9 +5,11 @@
 
             <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-                style="display:inline-block;width:728px;height:90px"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="3496243870"></ins>
+            style="display:block"
+            data-ad-client="ca-pub-4812454445865215"
+            data-ad-slot="3496243870"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
         </div>
         <div class="w-full flex lg:space-x-1">
             <div class="p-6 w-full" style="max-width: 60rem;">
@@ -43,13 +45,21 @@
         
                     <!-- HORIZONTAL -->
                     <ins class="adsbygoogle"
-                        style="display:inline-block;width:728px;height:90px"
-                        data-ad-client="ca-pub-4812454445865215"
-                        data-ad-slot="3496243870"></ins>
+                    style="display:block"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="3496243870"
+                    data-ad-format="auto"
+                    data-full-width-responsive="true"></ins>
                 </div>
             </div>
             <div class="hidden w-80 lg:block" style="min-width: 300px;">
                 {{-- ADS --}}
+        
+                {{-- SKYSCRAPER --}}
+                <ins class="adsbygoogle"
+                    style="display:inline-block;width:160px;height:600px"
+                    data-ad-client="ca-pub-4812454445865215"
+                    data-ad-slot="4415877212"></ins>
 
                 <!-- 2nd customized -->
                 <ins class="adsbygoogle"
@@ -75,12 +85,6 @@
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
                     data-ad-slot="6639899077"></ins>
-           
-                {{-- SKYSCRAPER --}}
-                <ins class="adsbygoogle"
-                    style="display:inline-block;width:160px;height:600px"
-                    data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="4415877212"></ins>
            </div>
         </div>
     </div>
