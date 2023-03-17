@@ -45,7 +45,7 @@
         <div class="mt-6">
             {{-- ADS --}}
 
-            <!-- HORIZONTAL -->
+            <!-- 1ST HORIZONTAL -->
             <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-4812454445865215"
@@ -72,7 +72,7 @@
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
     </div>
-    
+
     <div class="my-44">
         <h1 class="text-center text-2xl font-bold italic uppercase text-gray-600">
             “Code is like humor. When you have to explain it, it’s bad.” <br> – Cory House
