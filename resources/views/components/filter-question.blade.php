@@ -55,11 +55,11 @@
         <div class="mt-2">
             {{-- ADS --}}
 
-            <!-- HORIZONTAL -->
-            <ins class="adsbygoogle"
+        <!-- HORIZONTAL 2 -->
+        <ins class="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-4812454445865215"
-            data-ad-slot="3496243870"
+            data-ad-slot="6935181031"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
         </div>
