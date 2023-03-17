@@ -58,18 +58,19 @@
             <x-category.categories/>
         </section>
 
-        <div class="mt-6">
-            {{-- ADS --}}
-
-            <!-- HORIZONTAL 2 -->
-            <ins class="adsbygoogle"
-                style="display:block"
-                data-ad-client="ca-pub-4812454445865215"
-                data-ad-slot="6935181031"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
-        </div>
         
+    </div>
+    
+    <div class="mt-6">
+        {{-- ADS --}}
+
+        <!-- HORIZONTAL 2 -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-4812454445865215"
+            data-ad-slot="6935181031"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
     </div>
     
     <div class="my-44">
