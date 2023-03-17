@@ -5,22 +5,28 @@
 
             <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4812454445865215"
-            data-ad-slot="3496243870"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="3496243870"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
         <div class="w-full flex space-x-2">
 
             <div class="hidden relative w-96 md:block">
                 {{-- ADS --}}
                 
+                <!-- customized size medium square -->
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1525488989">
-                </ins>
+                    data-ad-slot="1525488989"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 
             </div>
             <div class="w-full p-4 shadow-xl h-fit">
@@ -84,10 +90,14 @@
             <div class="hidden relative w-96 md:block">
                 {{-- ADS --}}
 
+                <!-- customized size medium square -->
                 <ins class="adsbygoogle"
                     style="display:inline-block;width:300px;height:250px"
                     data-ad-client="ca-pub-4812454445865215"
-                    data-ad-slot="1278911129"></ins>
+                    data-ad-slot="1525488989"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
             </div>
         </div>
     </div>

@@ -3,13 +3,16 @@
         <div class="mt-2">
             {{-- ADS --}}
 
-            <!-- 1ST HORIZONTAL -->
+            <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4812454445865215"
-            data-ad-slot="3496243870"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="3496243870"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
 
         <form action="{{ route('question-search') }}" class="mt-12 w-full flex justify-start" method="POST">
@@ -45,13 +48,16 @@
         <div class="mt-6">
             {{-- ADS --}}
 
-            <!-- 1ST HORIZONTAL -->
+            <!-- HORIZONTAL -->
             <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-4812454445865215"
-            data-ad-slot="3496243870"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+                style="display:block"
+                data-ad-client="ca-pub-4812454445865215"
+                data-ad-slot="3496243870"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
         </div>
 
         <section class="categories mt-4">
@@ -71,6 +77,9 @@
             data-ad-slot="6935181031"
             data-ad-format="auto"
             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </div>
 
     <div class="my-44">
