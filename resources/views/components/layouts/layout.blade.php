@@ -64,6 +64,8 @@
     
     @vite('resources/js/app.js')
     <script src="//unpkg.com/@highlightjs/cdn-assets@11.7.0/highlight.min.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E4VC2ECVNF"></script>
     @stack('child-scripts')
     
 </body>
@@ -71,7 +73,12 @@
 </html>
 
 <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
+    // Google analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E4VC2ECVNF');
 </script>
 
 
