@@ -2,7 +2,7 @@
 
 ## Description
 
-####  This blog website project was built to provide different solutions for different coding problems. This project was built to practice SEO optimazation, I recently launch this project but, after a month unfortunately I need to take down the server due to costing of the server. 
+####  This blog website project was built to provide different solutions for different coding problems. This project was built to practice SEO optimazation.
 
 # Getting Started
 
